@@ -1,0 +1,97 @@
+2020-12-08 11:48:51,533 INFO    MainThread:10575 [wandb_init.py:_log_setup():293] Logging user logs to wandb/run-20201208_114851-Facesemore_sup_nt_euclidean_Resnet_/logs/debug.log
+2020-12-08 11:48:51,533 INFO    MainThread:10575 [wandb_init.py:_log_setup():294] Logging internal logs to wandb/run-20201208_114851-Facesemore_sup_nt_euclidean_Resnet_/logs/debug-internal.log
+2020-12-08 11:48:51,533 INFO    MainThread:10575 [wandb_setup.py:_flush():69] setting env: {'disable_code': 'True', 'notebook_name': 'Experiments'}
+2020-12-08 11:48:51,533 INFO    MainThread:10575 [wandb_setup.py:_flush():69] setting user settings: {'email': 'rahul.kanojia@hyperverge.co'}
+2020-12-08 11:48:51,533 INFO    MainThread:10575 [wandb_setup.py:_flush():69] multiprocessing start_methods=fork,spawn,forkserver
+2020-12-08 11:48:51,534 INFO    MainThread:10575 [wandb_setup.py:_flush():69] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f7e500680d0>
+2020-12-08 11:48:51,534 INFO    MainThread:10575 [wandb_run.py:finish():988] finishing run rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_
+2020-12-08 11:48:51,534 INFO    MainThread:10575 [wandb_init.py:_jupyter_teardown():225] cleaning up jupyter logic
+2020-12-08 11:48:51,534 INFO    MainThread:10575 [jupyter.py:save_history():200] not saving jupyter history
+2020-12-08 11:48:51,534 INFO    MainThread:10575 [wandb_run.py:_atexit_cleanup():1263] got exitcode: 0
+2020-12-08 11:48:51,535 INFO    MainThread:10575 [wandb_run.py:_restore():1235] restore
+2020-12-08 11:48:51,555 INFO    MainThread:10575 [wandb_run.py:_wait_for_finish():1377] got exit ret: uuid: "3d21c29fb710488eaf993403d1d4452e"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 595
+      total_bytes: 595
+    }
+  }
+}
+
+2020-12-08 11:48:53,567 INFO    MainThread:10575 [wandb_run.py:_wait_for_finish():1377] got exit ret: uuid: "34b4d4ebcf33409789ac74a1c589c358"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 4263
+      total_bytes: 4263
+    }
+  }
+}
+
+2020-12-08 11:48:55,572 INFO    MainThread:10575 [wandb_run.py:_wait_for_finish():1377] got exit ret: uuid: "6ae8da404a504aef88815cb04098090d"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 4263
+      total_bytes: 4263
+    }
+  }
+}
+
+2020-12-08 11:48:56,735 INFO    MainThread:10575 [wandb_run.py:_show_summary():1520] rendering summary
+2020-12-08 11:48:56,737 INFO    MainThread:10575 [wandb_run.py:_show_history():1558] rendering history
+2020-12-08 11:48:56,740 INFO    MainThread:10575 [wandb_run.py:_show_files():1586] logging synced files
+2020-12-08 11:48:59,499 INFO    MainThread:10575 [wandb_run.py:_console_start():1290] atexit reg
+2020-12-08 11:48:59,502 INFO    MainThread:10575 [wandb_run.py:_redirect():1160] redirect: SettingsConsole.WRAP
+2020-12-08 11:48:59,502 INFO    MainThread:10575 [wandb_run.py:_redirect():1191] Wrapping output streams.
+2020-12-08 11:48:59,502 INFO    MainThread:10575 [wandb_run.py:_redirect():1207] Redirects installed.
+2020-12-08 11:52:09,709 INFO    MainThread:10575 [wandb_run.py:_atexit_cleanup():1263] got exitcode: 0
+2020-12-08 11:52:09,710 INFO    MainThread:10575 [wandb_run.py:_restore():1235] restore
+2020-12-08 11:52:09,717 INFO    MainThread:10575 [wandb_run.py:_wait_for_finish():1377] got exit ret: uuid: "af5e3cdcfee146e9beff8c3df97e99e9"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+      media_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 35574
+      total_bytes: 35574
+    }
+  }
+}
+
+2020-12-08 11:52:11,730 INFO    MainThread:10575 [wandb_run.py:_wait_for_finish():1377] got exit ret: uuid: "985edbe89b49452aa860a7885f524ac2"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+      media_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 39324
+      total_bytes: 39324
+    }
+  }
+}
+
+2020-12-08 11:52:12,903 INFO    MainThread:10575 [wandb_run.py:_show_summary():1520] rendering summary
+2020-12-08 11:52:12,905 INFO    MainThread:10575 [wandb_run.py:_show_history():1558] rendering history
+2020-12-08 11:52:12,908 INFO    MainThread:10575 [wandb_run.py:_show_files():1586] logging synced files
+2020-12-08 11:52:12,913 INFO    MainThread:10575 [internal.py:handle_exit():137] Internal process exited

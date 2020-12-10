@@ -1,0 +1,82 @@
+2020-12-07 20:47:38,889 INFO    MainThread:30324 [wandb_init.py:_log_setup():293] Logging user logs to wandb/run-20201207_204738-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/logs/debug.log
+2020-12-07 20:47:38,889 INFO    MainThread:30324 [wandb_init.py:_log_setup():294] Logging internal logs to wandb/run-20201207_204738-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/logs/debug-internal.log
+2020-12-07 20:47:38,889 INFO    MainThread:30324 [wandb_setup.py:_flush():69] setting env: {'disable_code': 'True', 'notebook_name': 'Experiments'}
+2020-12-07 20:47:38,889 INFO    MainThread:30324 [wandb_setup.py:_flush():69] setting user settings: {'email': 'rahul.kanojia@hyperverge.co'}
+2020-12-07 20:47:38,889 INFO    MainThread:30324 [wandb_setup.py:_flush():69] multiprocessing start_methods=fork,spawn,forkserver
+2020-12-07 20:47:38,889 INFO    MainThread:30324 [wandb_setup.py:_flush():69] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fb6f5193310>
+2020-12-07 20:47:38,890 INFO    MainThread:30324 [wandb_run.py:finish():988] finishing run rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)
+2020-12-07 20:47:38,890 INFO    MainThread:30324 [wandb_init.py:_jupyter_teardown():225] cleaning up jupyter logic
+2020-12-07 20:47:38,890 INFO    MainThread:30324 [jupyter.py:save_history():200] not saving jupyter history
+2020-12-07 20:47:38,890 INFO    MainThread:30324 [wandb_run.py:_atexit_cleanup():1263] got exitcode: 0
+2020-12-07 20:47:38,891 INFO    MainThread:30324 [wandb_run.py:_restore():1235] restore
+2020-12-07 20:47:38,899 INFO    MainThread:30324 [wandb_run.py:_wait_for_finish():1377] got exit ret: uuid: "4413ec26b0944b19b234c92ce3c3a4af"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 595
+      total_bytes: 595
+    }
+  }
+}
+
+2020-12-07 20:47:40,915 INFO    MainThread:30324 [wandb_run.py:_wait_for_finish():1377] got exit ret: uuid: "5a9523387e5d407fbbe918c0fed708bd"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 3890
+      total_bytes: 3890
+    }
+  }
+}
+
+2020-12-07 20:47:42,114 INFO    MainThread:30324 [wandb_run.py:_show_summary():1520] rendering summary
+2020-12-07 20:47:42,116 INFO    MainThread:30324 [wandb_run.py:_show_history():1558] rendering history
+2020-12-07 20:47:42,120 INFO    MainThread:30324 [wandb_run.py:_show_files():1586] logging synced files
+2020-12-07 20:47:45,102 INFO    MainThread:30324 [wandb_run.py:_console_start():1290] atexit reg
+2020-12-07 20:47:45,104 INFO    MainThread:30324 [wandb_run.py:_redirect():1160] redirect: SettingsConsole.WRAP
+2020-12-07 20:47:45,104 INFO    MainThread:30324 [wandb_run.py:_redirect():1191] Wrapping output streams.
+2020-12-07 20:47:45,105 INFO    MainThread:30324 [wandb_run.py:_redirect():1207] Redirects installed.
+2020-12-08 08:01:19,271 INFO    MainThread:30324 [wandb_run.py:_atexit_cleanup():1263] got exitcode: 0
+2020-12-08 08:01:19,274 INFO    MainThread:30324 [wandb_run.py:_restore():1235] restore
+2020-12-08 08:01:19,283 INFO    MainThread:30324 [wandb_run.py:_wait_for_finish():1377] got exit ret: uuid: "ea399bd4d8804f2f85002d0b805a2d9b"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 595
+      total_bytes: 595
+    }
+  }
+}
+
+2020-12-08 08:01:21,298 INFO    MainThread:30324 [wandb_run.py:_wait_for_finish():1377] got exit ret: uuid: "a87cb9d2aebb4f828221b1bcbc9a537d"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 3513
+      total_bytes: 3513
+    }
+  }
+}
+
+2020-12-08 08:01:22,640 INFO    MainThread:30324 [wandb_run.py:_show_summary():1520] rendering summary
+2020-12-08 08:01:22,643 INFO    MainThread:30324 [wandb_run.py:_show_history():1558] rendering history
+2020-12-08 08:01:22,646 INFO    MainThread:30324 [wandb_run.py:_show_files():1586] logging synced files
+2020-12-08 08:01:22,651 INFO    MainThread:30324 [internal.py:handle_exit():137] Internal process exited

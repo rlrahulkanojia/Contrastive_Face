@@ -1,0 +1,13 @@
+Epoch: 200 Loss: 3.069
+Epoch: 210 Loss: 3.056
+Epoch: 220 Loss: 3.076
+Epoch: 230 Loss: 3.093
+Epoch: 240 Loss: 3.053
+Epoch: 250 Loss: 3.056
+Epoch: 260 Loss: 3.043
+Epoch: 270 Loss: 3.043
+Epoch: 280 Loss: 3.096
+Epoch: 290 Loss: 3.055
+
+/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/seaborn/_decorators.py:43: FutureWarning: Pass the following variables as keyword args: x, y. From version 0.12, the only valid positional argument will be `data`, and passing other arguments without an explicit keyword will result in an error or misinterpretation.
+  FutureWarning

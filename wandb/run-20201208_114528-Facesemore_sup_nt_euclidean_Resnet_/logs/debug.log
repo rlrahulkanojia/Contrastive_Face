@@ -1,0 +1,21 @@
+2020-12-08 11:45:28,321 INFO    MainThread:10575 [wandb_init.py:_log_setup():293] Logging user logs to wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/logs/debug.log
+2020-12-08 11:45:28,321 INFO    MainThread:10575 [wandb_init.py:_log_setup():294] Logging internal logs to wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/logs/debug-internal.log
+2020-12-08 11:45:28,321 INFO    MainThread:10575 [wandb_setup.py:_flush():69] setting env: {'disable_code': 'True', 'notebook_name': 'Experiments'}
+2020-12-08 11:45:28,321 INFO    MainThread:10575 [wandb_setup.py:_flush():69] setting user settings: {'email': 'rahul.kanojia@hyperverge.co'}
+2020-12-08 11:45:28,321 INFO    MainThread:10575 [wandb_setup.py:_flush():69] multiprocessing start_methods=fork,spawn,forkserver
+2020-12-08 11:45:28,321 INFO    MainThread:10575 [wandb_setup.py:_flush():69] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f7e500680d0>
+2020-12-08 11:45:30,928 INFO    MainThread:10575 [wandb_run.py:_console_start():1290] atexit reg
+2020-12-08 11:45:30,930 INFO    MainThread:10575 [wandb_run.py:_redirect():1160] redirect: SettingsConsole.WRAP
+2020-12-08 11:45:30,931 INFO    MainThread:10575 [wandb_run.py:_redirect():1191] Wrapping output streams.
+2020-12-08 11:45:30,931 INFO    MainThread:10575 [wandb_run.py:_redirect():1207] Redirects installed.
+2020-12-08 11:48:38,877 INFO    MainThread:10575 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-08 11:48:51,456 INFO    MainThread:10575 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-08 11:48:51,533 INFO    MainThread:10575 [wandb_init.py:_log_setup():293] Logging user logs to wandb/run-20201208_114851-Facesemore_sup_nt_euclidean_Resnet_/logs/debug.log
+2020-12-08 11:48:51,533 INFO    MainThread:10575 [wandb_init.py:_log_setup():294] Logging internal logs to wandb/run-20201208_114851-Facesemore_sup_nt_euclidean_Resnet_/logs/debug-internal.log
+2020-12-08 11:48:51,533 INFO    MainThread:10575 [wandb_setup.py:_flush():69] setting env: {'disable_code': 'True', 'notebook_name': 'Experiments'}
+2020-12-08 11:48:51,533 INFO    MainThread:10575 [wandb_setup.py:_flush():69] setting user settings: {'email': 'rahul.kanojia@hyperverge.co'}
+2020-12-08 11:48:51,533 INFO    MainThread:10575 [wandb_setup.py:_flush():69] multiprocessing start_methods=fork,spawn,forkserver
+2020-12-08 11:48:51,534 INFO    MainThread:10575 [wandb_setup.py:_flush():69] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f7e500680d0>
+2020-12-08 11:48:51,534 INFO    MainThread:10575 [wandb_run.py:finish():988] finishing run rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_
+2020-12-08 11:48:51,534 INFO    MainThread:10575 [wandb_init.py:_jupyter_teardown():225] cleaning up jupyter logic
+2020-12-08 11:48:51,534 INFO    MainThread:10575 [jupyter.py:save_history():200] not saving jupyter history

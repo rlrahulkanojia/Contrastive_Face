@@ -1,0 +1,19 @@
+{
+    "os": "Linux-4.13.0-26-generic-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.7.5",
+    "heartbeatAt": "2020-12-08T11:48:59.344919",
+    "startedAt": "2020-12-08T11:48:51.470283",
+    "docker": null,
+    "gpu": "GeForce GTX 1080 Ti",
+    "gpu_count": 4,
+    "cpu_count": 32,
+    "cuda": "10.1.168",
+    "args": [
+        "-f",
+        "/home/rahulkanojia/.local/share/jupyter/runtime/kernel-263e6ab9-30ef-4d26-8925-4433d8095d08.json"
+    ],
+    "state": "running",
+    "host": "c3d643849f2c",
+    "username": "rahulkanojia",
+    "executable": "/home/rahulkanojia/envs/tf/bin/python"
+}

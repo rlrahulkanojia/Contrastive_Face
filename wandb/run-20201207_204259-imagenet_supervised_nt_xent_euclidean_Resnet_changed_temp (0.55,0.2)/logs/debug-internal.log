@@ -1,0 +1,270 @@
+2020-12-07 20:43:04,298 INFO    MainThread:30176 [internal.py:wandb_internal():62] W&B internal server running at pid: 30176
+2020-12-07 20:43:04,302 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: check_version
+2020-12-07 20:43:04,302 INFO    WriterThread:30176 [datastore.py:open_for_write():76] open: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/run-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2).wandb
+2020-12-07 20:43:04,306 DEBUG   SenderThread:30176 [sender.py:send():89] send: header
+2020-12-07 20:43:04,306 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:43:04,306 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: check_version
+2020-12-07 20:43:04,312 DEBUG   Thread-4  :30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): pypi.org:443
+2020-12-07 20:43:04,405 DEBUG   Thread-4  :30176 [connectionpool.py:_make_request():461] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52216
+2020-12-07 20:43:04,440 DEBUG   SenderThread:30176 [sender.py:send():89] send: run
+2020-12-07 20:43:04,454 DEBUG   SenderThread:30176 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/rahulkanojia/Documents/EXP_CON/paul, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-12-07 20:43:04,482 DEBUG   SenderThread:30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:43:04,807 DEBUG   SenderThread:30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:43:04,818 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: run_start
+2020-12-07 20:43:04,823 INFO    SenderThread:30176 [dir_watcher.py:__init__():167] watching files in: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files
+2020-12-07 20:43:04,823 INFO    SenderThread:30176 [sender.py:_start_run_threads():489] run started: imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2) with start time 1607373782
+2020-12-07 20:43:04,823 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:43:04,827 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:43:04,974 DEBUG   SenderThread:30176 [sender.py:send():89] send: files
+2020-12-07 20:43:04,974 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-metadata.json with policy now
+2020-12-07 20:43:04,978 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:43:04,988 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:43:04,991 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: status
+2020-12-07 20:43:04,994 DEBUG   Thread-11 :30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:43:04,995 DEBUG   SenderThread:30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:43:05,292 DEBUG   SenderThread:30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:43:05,301 DEBUG   Thread-11 :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:43:05,306 DEBUG   Thread-11 :30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-07 20:43:05,828 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/output.log
+2020-12-07 20:43:05,829 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:43:05,829 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/requirements.txt
+2020-12-07 20:43:05,829 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-metadata.json
+2020-12-07 20:43:06,005 DEBUG   Thread-11 :30176 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20%280.55,0.2%29/wandb-metadata.json?Expires=1607460185&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=Xs4ge9oyBudkQXMglmLmnlKw2aUqLyUjU9rMf%2FA0pSeOlNVsEFuPlXa4LNqgTgwd5Ww1LPqPVm30E1lx04myONclRn4pAx56ozz05%2FR1fsecSXyrpFpcbmDBD5SsMKuAYkmE0Bhhyo3rsbTJkxlxfIXCwfi5tXhKmGNMUNiYj6LWWPME67ROXtsXuLLj1jBCoEStVAxRRtgCriDAKrDoHOp49qacN2EAZ%2FiPyi0wAa%2BfXi%2F0ufhMoasoudq%2BfGEasVpkhcspHWCssZ1Dok1iPyHOzjqqxfxRY8K2D9xSyLbHs9pmJe1bXPlICn4O9LVBmaYQ7belj3NpmfCfZXDXQA%3D%3D HTTP/1.1" 200 0
+2020-12-07 20:43:06,008 INFO    Thread-11 :30176 [upload_job.py:push():112] Uploaded file /tmp/tmphsyib08owandb/1d05ocgl-wandb-metadata.json
+2020-12-07 20:43:06,827 DEBUG   Thread-5  :30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:43:07,128 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:08,317 DEBUG   SenderThread:30176 [sender.py:send():89] send: stats
+2020-12-07 20:43:10,625 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:12,875 DEBUG   SenderThread:30176 [sender.py:send():89] send: stats
+2020-12-07 20:43:13,165 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:17,470 DEBUG   SenderThread:30176 [sender.py:send():89] send: stats
+2020-12-07 20:43:17,762 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:20,299 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:43:20,299 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:43:20,299 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: status
+2020-12-07 20:43:20,303 DEBUG   SenderThread:30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:43:20,593 DEBUG   SenderThread:30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:43:22,006 DEBUG   SenderThread:30176 [sender.py:send():89] send: stats
+2020-12-07 20:43:22,304 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:23,455 DEBUG   SenderThread:30176 [sender.py:send():89] send: history
+2020-12-07 20:43:23,456 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:43:23,460 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:43:23,862 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:43:23,862 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/output.log
+2020-12-07 20:43:25,757 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:26,223 DEBUG   SenderThread:30176 [sender.py:send():89] send: history
+2020-12-07 20:43:26,223 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:43:26,227 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:43:26,558 DEBUG   SenderThread:30176 [sender.py:send():89] send: stats
+2020-12-07 20:43:26,867 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:43:28,848 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:28,951 DEBUG   SenderThread:30176 [sender.py:send():89] send: history
+2020-12-07 20:43:28,951 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:43:29,005 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:43:29,870 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:43:31,077 DEBUG   SenderThread:30176 [sender.py:send():89] send: stats
+2020-12-07 20:43:31,244 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:31,735 DEBUG   SenderThread:30176 [sender.py:send():89] send: history
+2020-12-07 20:43:31,735 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:43:31,778 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:43:31,873 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:43:34,031 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:34,535 DEBUG   SenderThread:30176 [sender.py:send():89] send: history
+2020-12-07 20:43:34,535 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:43:34,561 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:43:34,877 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:43:35,599 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:43:35,600 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:43:35,600 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: status
+2020-12-07 20:43:35,604 DEBUG   SenderThread:30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:43:35,900 DEBUG   SenderThread:30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:43:35,903 DEBUG   SenderThread:30176 [sender.py:send():89] send: stats
+2020-12-07 20:43:36,218 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:37,355 DEBUG   SenderThread:30176 [sender.py:send():89] send: history
+2020-12-07 20:43:37,355 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:43:37,359 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:43:37,880 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:43:39,652 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:40,141 DEBUG   SenderThread:30176 [sender.py:send():89] send: history
+2020-12-07 20:43:40,142 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:43:40,146 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:43:40,248 DEBUG   SenderThread:30176 [sender.py:send():89] send: stats
+2020-12-07 20:43:40,883 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:43:42,542 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:42,870 DEBUG   SenderThread:30176 [sender.py:send():89] send: history
+2020-12-07 20:43:42,870 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:43:42,925 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:43:42,925 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:43:44,816 DEBUG   SenderThread:30176 [sender.py:send():89] send: stats
+2020-12-07 20:43:45,120 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:45,659 DEBUG   SenderThread:30176 [sender.py:send():89] send: history
+2020-12-07 20:43:45,659 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:43:45,696 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:43:45,929 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:43:47,951 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:48,396 DEBUG   SenderThread:30176 [sender.py:send():89] send: history
+2020-12-07 20:43:48,397 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:43:48,401 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:43:48,932 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:43:49,373 DEBUG   SenderThread:30176 [sender.py:send():89] send: stats
+2020-12-07 20:43:50,905 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:43:50,906 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:43:50,906 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: status
+2020-12-07 20:43:50,910 DEBUG   SenderThread:30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:43:51,206 DEBUG   SenderThread:30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:43:51,209 DEBUG   SenderThread:30176 [sender.py:send():89] send: history
+2020-12-07 20:43:51,209 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:43:51,217 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:43:51,501 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:51,940 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:43:51,940 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/output.log
+2020-12-07 20:43:53,800 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:53,976 DEBUG   SenderThread:30176 [sender.py:send():89] send: history
+2020-12-07 20:43:53,976 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:43:53,981 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:43:53,995 DEBUG   SenderThread:30176 [sender.py:send():89] send: stats
+2020-12-07 20:43:54,944 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:43:56,299 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:56,744 DEBUG   SenderThread:30176 [sender.py:send():89] send: history
+2020-12-07 20:43:56,744 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:43:56,749 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:43:56,946 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:43:58,558 DEBUG   SenderThread:30176 [sender.py:send():89] send: stats
+2020-12-07 20:43:58,933 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:43:59,493 DEBUG   SenderThread:30176 [sender.py:send():89] send: history
+2020-12-07 20:43:59,493 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:43:59,498 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:43:59,949 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:44:01,776 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:44:02,249 DEBUG   SenderThread:30176 [sender.py:send():89] send: history
+2020-12-07 20:44:02,250 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:44:02,254 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:44:02,953 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:44:03,199 DEBUG   SenderThread:30176 [sender.py:send():89] send: stats
+2020-12-07 20:44:04,895 WARNING MainThread:30176 [internal.py:wandb_internal():116] Internal process interrupt: 1
+2020-12-07 20:44:05,083 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: pause
+2020-12-07 20:44:05,083 INFO    HandlerThread:30176 [handler.py:handle_request_pause():222] stopping system metrics thread
+2020-12-07 20:44:05,191 DEBUG   SenderThread:30176 [sender.py:send():89] send: stats
+2020-12-07 20:44:05,958 INFO    Thread-8  :30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/output.log
+2020-12-07 20:44:06,211 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:44:06,211 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:44:06,211 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: status
+2020-12-07 20:44:06,216 DEBUG   SenderThread:30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:44:06,506 DEBUG   SenderThread:30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:44:12,548 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: resume
+2020-12-07 20:44:12,549 INFO    HandlerThread:30176 [handler.py:handle_request_resume():217] starting system metrics thread
+2020-12-07 20:44:14,543 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: pause
+2020-12-07 20:44:14,543 INFO    HandlerThread:30176 [handler.py:handle_request_pause():222] stopping system metrics thread
+2020-12-07 20:44:14,637 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: resume
+2020-12-07 20:44:14,637 INFO    HandlerThread:30176 [handler.py:handle_request_resume():217] starting system metrics thread
+2020-12-07 20:44:14,640 DEBUG   SenderThread:30176 [sender.py:send():89] send: stats
+2020-12-07 20:44:14,720 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: poll_exit
+2020-12-07 20:44:14,720 DEBUG   SenderThread:30176 [sender.py:send():89] send: exit
+2020-12-07 20:44:14,720 INFO    SenderThread:30176 [sender.py:send_exit():167] handling exit code: 0
+2020-12-07 20:44:14,720 INFO    SenderThread:30176 [sender.py:send_exit():175] send defer
+2020-12-07 20:44:14,721 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:44:14,721 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: poll_exit
+2020-12-07 20:44:14,721 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:44:14,722 INFO    HandlerThread:30176 [handler.py:handle_request_defer():68] handle defer: 0
+2020-12-07 20:44:14,722 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:44:14,722 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:44:14,722 INFO    SenderThread:30176 [sender.py:send_request_defer():184] handle sender defer: 0
+2020-12-07 20:44:14,722 INFO    SenderThread:30176 [sender.py:send_request_defer():220] send defer: 1
+2020-12-07 20:44:14,723 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:44:14,723 INFO    HandlerThread:30176 [handler.py:handle_request_defer():68] handle defer: 1
+2020-12-07 20:44:14,822 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:44:14,823 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:44:14,823 INFO    SenderThread:30176 [sender.py:send_request_defer():184] handle sender defer: 1
+2020-12-07 20:44:14,823 INFO    SenderThread:30176 [sender.py:send_request_defer():220] send defer: 2
+2020-12-07 20:44:14,823 DEBUG   SenderThread:30176 [sender.py:send():89] send: stats
+2020-12-07 20:44:14,824 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:44:14,824 INFO    HandlerThread:30176 [handler.py:handle_request_defer():68] handle defer: 2
+2020-12-07 20:44:14,825 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:44:14,825 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:44:14,825 INFO    SenderThread:30176 [sender.py:send_request_defer():184] handle sender defer: 2
+2020-12-07 20:44:14,825 INFO    SenderThread:30176 [sender.py:send_request_defer():220] send defer: 3
+2020-12-07 20:44:14,825 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:44:14,826 INFO    HandlerThread:30176 [handler.py:handle_request_defer():68] handle defer: 3
+2020-12-07 20:44:14,826 DEBUG   SenderThread:30176 [sender.py:send():89] send: summary
+2020-12-07 20:44:14,830 INFO    SenderThread:30176 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:44:14,831 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:44:14,831 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:44:14,832 INFO    SenderThread:30176 [sender.py:send_request_defer():184] handle sender defer: 3
+2020-12-07 20:44:14,832 INFO    SenderThread:30176 [sender.py:send_request_defer():220] send defer: 4
+2020-12-07 20:44:14,832 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:44:14,832 INFO    HandlerThread:30176 [handler.py:handle_request_defer():68] handle defer: 4
+2020-12-07 20:44:14,832 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:44:14,832 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:44:14,832 INFO    SenderThread:30176 [sender.py:send_request_defer():184] handle sender defer: 4
+2020-12-07 20:44:14,833 INFO    SenderThread:30176 [dir_watcher.py:finish():280] shutting down directory watcher
+2020-12-07 20:44:14,957 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:44:14,962 INFO    SenderThread:30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:44:14,962 INFO    SenderThread:30176 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/output.log
+2020-12-07 20:44:14,963 INFO    SenderThread:30176 [dir_watcher.py:finish():309] scan: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files
+2020-12-07 20:44:14,964 INFO    SenderThread:30176 [dir_watcher.py:finish():315] scan save: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-metadata.json wandb-metadata.json
+2020-12-07 20:44:14,964 INFO    SenderThread:30176 [dir_watcher.py:finish():315] scan save: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json wandb-summary.json
+2020-12-07 20:44:14,964 INFO    SenderThread:30176 [dir_watcher.py:finish():315] scan save: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/requirements.txt requirements.txt
+2020-12-07 20:44:14,965 INFO    SenderThread:30176 [dir_watcher.py:finish():315] scan save: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/output.log output.log
+2020-12-07 20:44:14,971 DEBUG   Thread-14 :30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:44:14,977 INFO    SenderThread:30176 [dir_watcher.py:finish():315] scan save: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/config.yaml config.yaml
+2020-12-07 20:44:14,978 DEBUG   Thread-15 :30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:44:14,984 DEBUG   Thread-16 :30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:44:14,984 INFO    SenderThread:30176 [sender.py:send_request_defer():220] send defer: 5
+2020-12-07 20:44:14,985 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:44:14,990 INFO    HandlerThread:30176 [handler.py:handle_request_defer():68] handle defer: 5
+2020-12-07 20:44:14,991 DEBUG   Thread-17 :30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:44:14,991 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:44:14,992 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:44:14,992 INFO    SenderThread:30176 [sender.py:send_request_defer():184] handle sender defer: 5
+2020-12-07 20:44:14,993 INFO    SenderThread:30176 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-07 20:44:14,993 INFO    SenderThread:30176 [sender.py:send_request_defer():220] send defer: 6
+2020-12-07 20:44:14,994 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:44:14,994 INFO    HandlerThread:30176 [handler.py:handle_request_defer():68] handle defer: 6
+2020-12-07 20:44:14,994 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:44:14,994 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:44:14,994 INFO    SenderThread:30176 [sender.py:send_request_defer():184] handle sender defer: 6
+2020-12-07 20:44:15,283 DEBUG   Thread-14 :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:44:15,287 DEBUG   Thread-16 :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:44:15,296 DEBUG   Thread-14 :30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-07 20:44:15,300 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:44:15,302 DEBUG   Thread-16 :30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-07 20:44:15,303 DEBUG   Thread-17 :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:44:15,314 DEBUG   Thread-17 :30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-07 20:44:15,319 DEBUG   Thread-15 :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:44:15,328 DEBUG   Thread-15 :30176 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-07 20:44:15,569 DEBUG   Thread-5  :30176 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20(0.55,0.2)/file_stream HTTP/1.1" 200 None
+2020-12-07 20:44:15,571 INFO    SenderThread:30176 [sender.py:send_request_defer():220] send defer: 7
+2020-12-07 20:44:15,572 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:44:15,572 INFO    HandlerThread:30176 [handler.py:handle_request_defer():68] handle defer: 7
+2020-12-07 20:44:15,572 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:44:15,572 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:44:15,572 INFO    SenderThread:30176 [sender.py:send_request_defer():184] handle sender defer: 7
+2020-12-07 20:44:15,573 INFO    SenderThread:30176 [sender.py:send_request_defer():220] send defer: 8
+2020-12-07 20:44:15,573 DEBUG   SenderThread:30176 [sender.py:send():89] send: final
+2020-12-07 20:44:15,573 DEBUG   SenderThread:30176 [sender.py:send():89] send: footer
+2020-12-07 20:44:15,574 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:44:15,574 INFO    HandlerThread:30176 [handler.py:handle_request_defer():68] handle defer: 8
+2020-12-07 20:44:15,574 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:44:15,574 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:44:15,575 INFO    SenderThread:30176 [sender.py:send_request_defer():184] handle sender defer: 8
+2020-12-07 20:44:15,890 DEBUG   Thread-14 :30176 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20%280.55,0.2%29/wandb-summary.json?Expires=1607460255&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=TFykYl0zFSnVLYwM7gbOwFs8hypWulwJi5lpJzDzDstuG6TZcdDFDIoV0qGXSLbWW%2F%2F9uJ8%2BLpuHGx58gr%2FKcjWh1ls2dvwJisRaJd9HMamW%2FXS3i3SKBx6ssSUQw6NBv9Xnp8EDi5mJe9JKMSw6InImjyeHyf9C2r%2FY%2BVrgl6rt6%2FcgQVSlXW2Hk8BzZWCELQp2SbHUphO7vg7JMcgvPTv5AzmkwbwEBUkuyaAcmUzny5M%2Fmp1fiqCIPM8oMwCe9sn1V7xLOQigkppa8MUSCUFCxNbTyFQSYSrvZWO74F5Hj%2Ftq1wygagCQQU95wjTbi2heUkaXvEYR41Erg81Ecg%3D%3D HTTP/1.1" 200 0
+2020-12-07 20:44:15,894 INFO    Thread-14 :30176 [upload_job.py:push():112] Uploaded file wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/wandb-summary.json
+2020-12-07 20:44:15,895 DEBUG   Thread-16 :30176 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20%280.55,0.2%29/output.log?Expires=1607460255&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=aqCxDF9JGfhTTUQO4X%2FjFy5REFkrVR9zNz%2BorI1mTn%2BwsnMV8H5PLgEmolCt8C5bHNdZPrnJ8KWp%2Bf1blewNCgSlgqzkbvUmbZqnrpJA9LOJe0trJrurxcv9%2BaHgCHhc6ByGIu%2FOBITwPFT52HNzpZUT%2BK33o01pAMy5Rh16fyesYtSCOY5HVjgSWXDCIOOPeHWC4eZB%2F4WpyeCqgl%2Fbz348NmI7MFjEX5vK91WXitYQQ10petan9%2FNDFPfKSkmjhjwHYnS5%2FTBtBFHTVUuCCMYcX0FXj0VkJy9Y74erLbGGCXJo5xBMPAJ8xXHsWv%2BEVhNG379HKHcySzrae17AbQ%3D%3D HTTP/1.1" 200 0
+2020-12-07 20:44:15,898 INFO    Thread-16 :30176 [upload_job.py:push():112] Uploaded file wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/output.log
+2020-12-07 20:44:15,901 DEBUG   Thread-17 :30176 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20%280.55,0.2%29/config.yaml?Expires=1607460255&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=gKd7tQ68O%2BCwc1Eltz9LV%2BaPOX8aMIEZKVNEZ2Y8EATDtKgij2Y2doCSiX4xe6nvJ9fyDpcbF5pMHeV1YxMraH2t7C%2FbkluXlyTI2u%2Bbn%2F5m3puAUtklE0Fwom4tHyMHo3cLm2fTGDpM4MdFamrORR%2FYr09%2FX94qAh5aLcJCEy5UkcdBmWjLiTx3bjc8N9gwXG%2FBuTcofp%2FdWLsSXxzxAILw3mD%2BYfDPDGRGjFLVuwGpICfmm1RYOjgpm1zEiC3zQTSitDCe%2FNLMeW55Fa8zO1tlAgQlS95XVCDGNANUW26uTjxkCrN9kPKi3eSpSi0yiemIYyF6C72SlvuwVVGZOg%3D%3D HTTP/1.1" 200 0
+2020-12-07 20:44:15,904 INFO    Thread-17 :30176 [upload_job.py:push():112] Uploaded file wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/config.yaml
+2020-12-07 20:44:15,907 DEBUG   Thread-15 :30176 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp%20%280.55,0.2%29/requirements.txt?Expires=1607460255&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=q%2BPdT4Hci7cPU60aHvQ7EbX60MylbI8qbmWdLzfQl2QQEGCDnwpIVW714zCG5SL5R6ezJpSOBxgSfxmEdXEy4gvU1469v89%2FiLB9uYQ7i7jf%2BpvzUsK1Q8GSxCk6KG0%2F1H%2BmV4OogK%2BTz6f2BJaNv9XOXENhLqaTs%2FMrKEiN3oFz4xA72dmmxbWiay7dkZ69CqrDfjtddZxF0wPt4OkGaVrVfx9%2FVdUix4Alb8U4IlfWPzGDqW4qCMpElEJ4TM65K4p166WMw66pf6hz7NeQHWoZIvbFv732bEVZV2AjtZJ9ztaIf%2BOlpFom0nDiE010Za7F2vgmogRNFnf9SpHJDQ%3D%3D HTTP/1.1" 200 0
+2020-12-07 20:44:15,910 INFO    Thread-15 :30176 [upload_job.py:push():112] Uploaded file wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/files/requirements.txt
+2020-12-07 20:44:16,731 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: poll_exit
+2020-12-07 20:44:16,732 DEBUG   SenderThread:30176 [sender.py:send():89] send: request
+2020-12-07 20:44:16,732 DEBUG   SenderThread:30176 [sender.py:send_request():98] send_request: poll_exit
+2020-12-07 20:44:16,732 INFO    SenderThread:30176 [file_pusher.py:join():174] waiting for file pusher
+2020-12-07 20:44:16,735 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: get_summary
+2020-12-07 20:44:16,736 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: sampled_history
+2020-12-07 20:44:16,738 DEBUG   HandlerThread:30176 [handler.py:handle_request():54] handle_request: shutdown
+2020-12-07 20:44:16,738 INFO    HandlerThread:30176 [handler.py:finish():267] shutting down handler
+2020-12-07 20:44:17,574 INFO    WriterThread:30176 [datastore.py:close():257] close: wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/run-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2).wandb
+2020-12-07 20:44:17,733 INFO    SenderThread:30176 [sender.py:finish():608] shutting down sender
+2020-12-07 20:44:17,733 INFO    SenderThread:30176 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-07 20:44:17,733 INFO    SenderThread:30176 [file_pusher.py:join():174] waiting for file pusher
+2020-12-07 20:44:17,735 INFO    MainThread:30176 [internal.py:handle_exit():137] Internal process exited

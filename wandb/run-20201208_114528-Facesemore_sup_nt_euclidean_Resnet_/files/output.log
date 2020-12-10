@@ -1,0 +1,24 @@
+Epoch: 0 Loss: 4.613
+Epoch: 10 Loss: 4.605
+Epoch: 20 Loss: 4.605
+Epoch: 30 Loss: 4.596
+Epoch: 40 Loss: 4.593
+Epoch: 50 Loss: 4.548
+Epoch: 60 Loss: 4.598
+Epoch: 70 Loss: 4.316
+Epoch: 80 Loss: 4.133
+Epoch: 90 Loss: 4.035
+Epoch: 100 Loss: 3.940
+Epoch: 110 Loss: 3.809
+Epoch: 120 Loss: 3.769
+Epoch: 130 Loss: 3.647
+Epoch: 140 Loss: 3.552
+Epoch: 150 Loss: 3.544
+Epoch: 160 Loss: 3.175
+Epoch: 170 Loss: 3.228
+Epoch: 180 Loss: 3.081
+Epoch: 190 Loss: 3.102
+
+findfont: Font family ['xkcd', 'xkcd Script', 'Humor Sans', 'Comic Neue', 'Comic Sans MS'] not found. Falling back to DejaVu Sans.
+findfont: Font family ['xkcd', 'xkcd Script', 'Humor Sans', 'Comic Neue', 'Comic Sans MS'] not found. Falling back to DejaVu Sans.
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.

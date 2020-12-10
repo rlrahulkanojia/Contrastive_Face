@@ -1,0 +1,11 @@
+Epoch: 0 Loss: 0.262
+Epoch: 10 Loss: 0.131
+Epoch: 20 Loss: 0.103
+Epoch: 30 Loss: 0.061
+Epoch: 40 Loss: 0.015
+Epoch: 50 Loss: 0.010
+
+findfont: Font family ['xkcd', 'xkcd Script', 'Humor Sans', 'Comic Neue', 'Comic Sans MS'] not found. Falling back to DejaVu Sans.
+findfont: Font family ['xkcd', 'xkcd Script', 'Humor Sans', 'Comic Neue', 'Comic Sans MS'] not found. Falling back to DejaVu Sans.
+/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/seaborn/_decorators.py:43: FutureWarning: Pass the following variables as keyword args: x, y. From version 0.12, the only valid positional argument will be `data`, and passing other arguments without an explicit keyword will result in an error or misinterpretation.
+  FutureWarning

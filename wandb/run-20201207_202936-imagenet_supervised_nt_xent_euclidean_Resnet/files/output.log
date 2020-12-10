@@ -1,0 +1,10 @@
+Epoch: 0 Loss: 34.117
+Epoch: 10 Loss: 32.091
+Epoch: 20 Loss: 30.881
+Epoch: 30 Loss: 30.103
+Epoch: 40 Loss: 29.659
+Epoch: 50 Loss: nan
+
+findfont: Font family ['xkcd', 'xkcd Script', 'Humor Sans', 'Comic Neue', 'Comic Sans MS'] not found. Falling back to DejaVu Sans.
+findfont: Font family ['xkcd', 'xkcd Script', 'Humor Sans', 'Comic Neue', 'Comic Sans MS'] not found. Falling back to DejaVu Sans.
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.

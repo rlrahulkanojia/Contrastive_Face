@@ -1,0 +1,61 @@
+2020-12-09 05:31:08,071 INFO    MainThread:2019 [internal.py:wandb_internal():62] W&B internal server running at pid: 2019
+2020-12-09 05:31:08,074 DEBUG   HandlerThread:2019 [handler.py:handle_request():54] handle_request: check_version
+2020-12-09 05:31:08,075 INFO    WriterThread:2019 [datastore.py:open_for_write():76] open: wandb/run-20201209_053106-Facesemore_sup_nt_euclidean_Resnet_augumentation/run-Facesemore_sup_nt_euclidean_Resnet_augumentation.wandb
+2020-12-09 05:31:08,078 DEBUG   SenderThread:2019 [sender.py:send():89] send: header
+2020-12-09 05:31:08,078 DEBUG   SenderThread:2019 [sender.py:send():89] send: request
+2020-12-09 05:31:08,078 DEBUG   SenderThread:2019 [sender.py:send_request():98] send_request: check_version
+2020-12-09 05:31:08,084 DEBUG   Thread-4  :2019 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): pypi.org:443
+2020-12-09 05:31:08,185 DEBUG   Thread-4  :2019 [connectionpool.py:_make_request():461] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52216
+2020-12-09 05:31:08,221 DEBUG   SenderThread:2019 [sender.py:send():89] send: run
+2020-12-09 05:31:08,239 DEBUG   SenderThread:2019 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/rahulkanojia/Documents/EXP_CON/paul, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-12-09 05:31:08,270 DEBUG   SenderThread:2019 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-09 05:31:08,577 DEBUG   SenderThread:2019 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 400 None
+2020-12-09 05:31:08,579 ERROR   SenderThread:2019 [internal_api.py:execute():131] 400 response executing GraphQL.
+2020-12-09 05:31:08,580 ERROR   SenderThread:2019 [internal_api.py:execute():132] {"errors":[{"message":"run rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_augumentation was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2020-12-09 05:31:09,222 INFO    WriterThread:2019 [datastore.py:close():257] close: wandb/run-20201209_053106-Facesemore_sup_nt_euclidean_Resnet_augumentation/run-Facesemore_sup_nt_euclidean_Resnet_augumentation.wandb
+2020-12-09 05:31:09,223 INFO    HandlerThread:2019 [handler.py:finish():267] shutting down handler
+2020-12-09 05:31:09,239 ERROR   MainThread:2019 [internal.py:wandb_internal():128] Thread SenderThread:
+Traceback (most recent call last):
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/wandb/internal/internal_api.py", line 974, in upsert_run
+    response = self.gql(mutation, variable_values=variable_values, **kwargs)
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/wandb/old/retry.py", line 96, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/wandb/internal/internal_api.py", line 134, in execute
+    six.reraise(*sys.exc_info())
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/wandb/internal/internal_api.py", line 128, in execute
+    return self.client.execute(*args, **kwargs)
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/gql/transport/requests.py", line 39, in execute
+    request.raise_for_status()
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/requests/models.py", line 943, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/wandb/internal/internal_util.py", line 33, in run
+    self._run()
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/wandb/internal/internal_util.py", line 60, in _run
+    self._process(record)
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/wandb/internal/internal.py", line 232, in _process
+    self._sm.send(record)
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/wandb/internal/sender.py", line 91, in send
+    send_handler(record)
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/wandb/internal/sender.py", line 378, in send_run
+    self._init_run(run, config_dict)
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/wandb/internal/sender.py", line 414, in _init_run
+    commit=repo.last_commit,
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/wandb/apis/normalize.py", line 26, in wrapper
+    raise CommError(err.response, err)
+wandb.errors.error.CommError: <Response [400]>
+2020-12-09 05:31:09,355 DEBUG   raven-sentry.BackgroundWorker:2019 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): o151352.ingest.sentry.io:443
+2020-12-09 05:31:10,429 DEBUG   raven-sentry.BackgroundWorker:2019 [connectionpool.py:_make_request():461] https://o151352.ingest.sentry.io:443 "POST /api/5288891/store/ HTTP/1.1" 200 41
+2020-12-09 05:31:11,354 INFO    MainThread:2019 [internal.py:handle_exit():137] Internal process exited

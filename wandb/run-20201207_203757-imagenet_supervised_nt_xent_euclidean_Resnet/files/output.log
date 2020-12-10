@@ -1,0 +1,4 @@
+Epoch: 0 Loss: 27.575
+Epoch: 10 Loss: 27.555
+
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.

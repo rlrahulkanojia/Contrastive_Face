@@ -1,0 +1,217 @@
+2020-12-08 11:43:41,714 INFO    MainThread:10237 [internal.py:wandb_internal():62] W&B internal server running at pid: 10237
+2020-12-08 11:43:41,717 INFO    WriterThread:10237 [datastore.py:open_for_write():76] open: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/run-Facesemore_sup_nt_euclidean_Resnet_.wandb
+2020-12-08 11:43:41,718 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: check_version
+2020-12-08 11:43:41,721 DEBUG   SenderThread:10237 [sender.py:send():89] send: header
+2020-12-08 11:43:41,721 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:43:41,721 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: check_version
+2020-12-08 11:43:41,727 DEBUG   Thread-4  :10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): pypi.org:443
+2020-12-08 11:43:41,823 DEBUG   Thread-4  :10237 [connectionpool.py:_make_request():461] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52216
+2020-12-08 11:43:41,858 DEBUG   SenderThread:10237 [sender.py:send():89] send: run
+2020-12-08 11:43:41,901 DEBUG   SenderThread:10237 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/rahulkanojia/Documents/EXP_CON/paul, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-12-08 11:43:41,996 DEBUG   SenderThread:10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:43:42,314 DEBUG   SenderThread:10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:43:42,325 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: run_start
+2020-12-08 11:43:42,331 INFO    SenderThread:10237 [dir_watcher.py:__init__():167] watching files in: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files
+2020-12-08 11:43:42,331 INFO    SenderThread:10237 [sender.py:_start_run_threads():489] run started: Facesemore_sup_nt_euclidean_Resnet_ with start time 1607427820
+2020-12-08 11:43:42,331 DEBUG   SenderThread:10237 [sender.py:send():89] send: summary
+2020-12-08 11:43:42,336 INFO    SenderThread:10237 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:43:42,517 DEBUG   SenderThread:10237 [sender.py:send():89] send: files
+2020-12-08 11:43:42,517 INFO    SenderThread:10237 [sender.py:_save_file():567] saving file wandb-metadata.json with policy now
+2020-12-08 11:43:42,527 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:43:42,528 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:43:42,528 DEBUG   Thread-11 :10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:43:42,528 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: status
+2020-12-08 11:43:42,532 DEBUG   SenderThread:10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:43:42,816 DEBUG   SenderThread:10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:43:42,832 DEBUG   Thread-11 :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:43:42,842 DEBUG   Thread-11 :10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-08 11:43:43,335 INFO    Thread-8  :10237 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-metadata.json
+2020-12-08 11:43:43,335 INFO    Thread-8  :10237 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/requirements.txt
+2020-12-08 11:43:43,336 INFO    Thread-8  :10237 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:43:43,336 INFO    Thread-8  :10237 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:43:43,752 DEBUG   Thread-11 :10237 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/wandb-metadata.json?Expires=1607514222&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=lmDfdftk195WWFiuqlhzLJ9yo8dlFMZG6ij6sFssEcfSCnUTTZoOA%2B6tOajD7QMmMGZtt56tf%2FLvF6A2CwlTYHJyLUE0hPjbdW2wqHu5YlmWTXWDfgowVNggq7kZK%2Blyt2j%2FUKj3zOzMW3hM9ja%2FMwEkeHYm1IZVlr7uMizkbEN1Vf8TDW6xy7SL4p39%2B4rbEGmIg7FluWguBF%2FluuYw%2FHA1B40T3prXaU4VpMGEyINdcrXMFAVjI3g7284uCiZb2%2F3Pahb5vXqnhmxzJuDZuOMGil%2BL1PlS9OsBkXOTk1pB%2BY4Nncb9gj6qOp4iH2FNlfvtCGjYuK1Vr6CudJH7VQ%3D%3D HTTP/1.1" 200 0
+2020-12-08 11:43:43,755 INFO    Thread-11 :10237 [upload_job.py:push():112] Uploaded file /tmp/tmpswncdze5wandb/35px1pby-wandb-metadata.json
+2020-12-08 11:43:44,335 DEBUG   Thread-5  :10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:43:44,645 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:43:45,767 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:43:48,076 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:43:50,266 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:43:50,561 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:43:54,779 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:43:55,099 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:43:57,839 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:43:57,839 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:43:57,839 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: status
+2020-12-08 11:43:57,845 DEBUG   SenderThread:10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:43:58,139 DEBUG   SenderThread:10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:43:59,325 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:43:59,630 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:44:01,921 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:44:02,361 INFO    Thread-8  :10237 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:44:03,891 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:44:04,191 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:44:08,405 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:44:08,691 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:44:10,374 INFO    Thread-8  :10237 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:44:12,331 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:44:12,977 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:44:13,144 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:44:13,145 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:44:13,145 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: status
+2020-12-08 11:44:13,149 DEBUG   SenderThread:10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:44:13,438 DEBUG   SenderThread:10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:44:15,286 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:44:17,492 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:44:17,794 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:44:19,388 INFO    Thread-8  :10237 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:44:20,682 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:44:22,054 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:44:24,353 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:44:26,594 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:44:26,919 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:44:27,400 INFO    Thread-8  :10237 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:44:28,443 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:44:28,444 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:44:28,444 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: status
+2020-12-08 11:44:28,449 DEBUG   SenderThread:10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:44:28,744 DEBUG   SenderThread:10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:44:29,217 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:44:31,105 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:44:31,410 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:44:35,353 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:44:35,415 INFO    Thread-8  :10237 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:44:35,643 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:44:37,923 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:44:40,173 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:44:43,750 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:44:43,751 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:44:43,751 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: status
+2020-12-08 11:44:43,756 DEBUG   SenderThread:10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:44:44,054 DEBUG   SenderThread:10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:44:44,527 INFO    Thread-8  :10237 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:44:44,693 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:44:49,228 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:44:49,512 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:44:52,666 INFO    Thread-8  :10237 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:44:53,793 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:44:58,320 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:44:59,060 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:44:59,061 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:44:59,061 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: status
+2020-12-08 11:44:59,066 DEBUG   SenderThread:10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:44:59,363 DEBUG   SenderThread:10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:45:00,443 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:45:00,705 INFO    Thread-8  :10237 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:45:02,587 WARNING MainThread:10237 [internal.py:wandb_internal():116] Internal process interrupt: 1
+2020-12-08 11:45:02,709 INFO    Thread-8  :10237 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:45:02,842 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:45:05,107 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: pause
+2020-12-08 11:45:05,107 INFO    HandlerThread:10237 [handler.py:handle_request_pause():222] stopping system metrics thread
+2020-12-08 11:45:05,217 DEBUG   SenderThread:10237 [sender.py:send():89] send: stats
+2020-12-08 11:45:05,326 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: poll_exit
+2020-12-08 11:45:05,326 DEBUG   SenderThread:10237 [sender.py:send():89] send: exit
+2020-12-08 11:45:05,327 INFO    SenderThread:10237 [sender.py:send_exit():167] handling exit code: 0
+2020-12-08 11:45:05,327 INFO    SenderThread:10237 [sender.py:send_exit():175] send defer
+2020-12-08 11:45:05,327 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:45:05,327 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: poll_exit
+2020-12-08 11:45:05,328 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:45:05,328 INFO    HandlerThread:10237 [handler.py:handle_request_defer():68] handle defer: 0
+2020-12-08 11:45:05,329 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:45:05,329 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:45:05,329 INFO    SenderThread:10237 [sender.py:send_request_defer():184] handle sender defer: 0
+2020-12-08 11:45:05,329 INFO    SenderThread:10237 [sender.py:send_request_defer():220] send defer: 1
+2020-12-08 11:45:05,329 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:45:05,329 INFO    HandlerThread:10237 [handler.py:handle_request_defer():68] handle defer: 1
+2020-12-08 11:45:05,330 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:45:05,330 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:45:05,330 INFO    SenderThread:10237 [sender.py:send_request_defer():184] handle sender defer: 1
+2020-12-08 11:45:05,330 INFO    SenderThread:10237 [sender.py:send_request_defer():220] send defer: 2
+2020-12-08 11:45:05,330 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:45:05,331 INFO    HandlerThread:10237 [handler.py:handle_request_defer():68] handle defer: 2
+2020-12-08 11:45:05,331 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:45:05,331 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:45:05,331 INFO    SenderThread:10237 [sender.py:send_request_defer():184] handle sender defer: 2
+2020-12-08 11:45:05,331 INFO    SenderThread:10237 [sender.py:send_request_defer():220] send defer: 3
+2020-12-08 11:45:05,332 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:45:05,332 INFO    HandlerThread:10237 [handler.py:handle_request_defer():68] handle defer: 3
+2020-12-08 11:45:05,332 DEBUG   SenderThread:10237 [sender.py:send():89] send: summary
+2020-12-08 11:45:05,366 INFO    SenderThread:10237 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:45:05,367 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:45:05,367 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:45:05,367 INFO    SenderThread:10237 [sender.py:send_request_defer():184] handle sender defer: 3
+2020-12-08 11:45:05,367 INFO    SenderThread:10237 [sender.py:send_request_defer():220] send defer: 4
+2020-12-08 11:45:05,368 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:45:05,368 INFO    HandlerThread:10237 [handler.py:handle_request_defer():68] handle defer: 4
+2020-12-08 11:45:05,368 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:45:05,368 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:45:05,368 INFO    SenderThread:10237 [sender.py:send_request_defer():184] handle sender defer: 4
+2020-12-08 11:45:05,368 INFO    SenderThread:10237 [dir_watcher.py:finish():280] shutting down directory watcher
+2020-12-08 11:45:05,711 INFO    SenderThread:10237 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:45:05,712 INFO    SenderThread:10237 [dir_watcher.py:finish():309] scan: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files
+2020-12-08 11:45:05,712 INFO    SenderThread:10237 [dir_watcher.py:finish():315] scan save: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-metadata.json wandb-metadata.json
+2020-12-08 11:45:05,712 INFO    SenderThread:10237 [dir_watcher.py:finish():315] scan save: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json wandb-summary.json
+2020-12-08 11:45:05,713 INFO    SenderThread:10237 [dir_watcher.py:finish():315] scan save: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/requirements.txt requirements.txt
+2020-12-08 11:45:05,714 INFO    SenderThread:10237 [dir_watcher.py:finish():315] scan save: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/output.log output.log
+2020-12-08 11:45:05,726 INFO    SenderThread:10237 [dir_watcher.py:finish():315] scan save: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/config.yaml config.yaml
+2020-12-08 11:45:05,728 DEBUG   Thread-12 :10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:45:05,728 INFO    SenderThread:10237 [sender.py:send_request_defer():220] send defer: 5
+2020-12-08 11:45:05,734 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:45:05,734 INFO    HandlerThread:10237 [handler.py:handle_request_defer():68] handle defer: 5
+2020-12-08 11:45:05,735 DEBUG   Thread-13 :10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:45:05,736 DEBUG   Thread-14 :10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:45:05,736 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:45:05,737 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:45:05,742 INFO    SenderThread:10237 [sender.py:send_request_defer():184] handle sender defer: 5
+2020-12-08 11:45:05,742 INFO    SenderThread:10237 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-08 11:45:05,742 INFO    SenderThread:10237 [sender.py:send_request_defer():220] send defer: 6
+2020-12-08 11:45:05,743 DEBUG   Thread-15 :10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:45:05,744 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:45:05,744 INFO    HandlerThread:10237 [handler.py:handle_request_defer():68] handle defer: 6
+2020-12-08 11:45:05,745 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:45:05,745 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:45:05,745 INFO    SenderThread:10237 [sender.py:send_request_defer():184] handle sender defer: 6
+2020-12-08 11:45:06,030 DEBUG   Thread-12 :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:45:06,031 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:45:06,038 DEBUG   Thread-14 :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:45:06,046 DEBUG   Thread-12 :10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-08 11:45:06,051 DEBUG   Thread-14 :10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-08 11:45:06,052 DEBUG   Thread-15 :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:45:06,056 DEBUG   Thread-13 :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:45:06,064 DEBUG   Thread-15 :10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-08 11:45:06,069 DEBUG   Thread-13 :10237 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-08 11:45:06,312 DEBUG   Thread-5  :10237 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:45:06,315 INFO    SenderThread:10237 [sender.py:send_request_defer():220] send defer: 7
+2020-12-08 11:45:06,315 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:45:06,316 INFO    HandlerThread:10237 [handler.py:handle_request_defer():68] handle defer: 7
+2020-12-08 11:45:06,316 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:45:06,316 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:45:06,316 INFO    SenderThread:10237 [sender.py:send_request_defer():184] handle sender defer: 7
+2020-12-08 11:45:06,316 INFO    SenderThread:10237 [sender.py:send_request_defer():220] send defer: 8
+2020-12-08 11:45:06,317 DEBUG   SenderThread:10237 [sender.py:send():89] send: final
+2020-12-08 11:45:06,318 DEBUG   SenderThread:10237 [sender.py:send():89] send: footer
+2020-12-08 11:45:06,318 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:45:06,318 INFO    HandlerThread:10237 [handler.py:handle_request_defer():68] handle defer: 8
+2020-12-08 11:45:06,319 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:45:06,319 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:45:06,319 INFO    SenderThread:10237 [sender.py:send_request_defer():184] handle sender defer: 8
+2020-12-08 11:45:06,634 DEBUG   Thread-12 :10237 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/wandb-summary.json?Expires=1607514305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=YoYyQMmWDyA1NTLf4jun%2Bmehyfvh%2Bac16XEPjBSrBG9nULhC5SsCBuJJfdLQdS0DasbrKMeO8uzqfPyBFOCK6lPfc%2FCDrs5lmtEoCYveoEp4j1WTqDruE2JUfLqCiHrtV2QkdE03vWuFQ%2BijDmI3xBKxf7%2BF5muNJffGqyJ8vYxr1%2BiaQZGJW%2FXmZGFyTYpv59XVjbiMRg%2BRrlNI%2F7pT2bBNPVMuXPxOMM%2BRNzHQdMUO78%2BsHGtUmCDCssn4TXw4axGPhxBrjSiioYWmBw9Y6zIgtIUoMvMngGIwMGwzO3he%2BSOyqBQIrZcd%2BPsQn%2FJsA600rg9%2BfFqKcR1e6XtrdA%3D%3D HTTP/1.1" 200 0
+2020-12-08 11:45:06,639 INFO    Thread-12 :10237 [upload_job.py:push():112] Uploaded file wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:45:06,648 DEBUG   Thread-14 :10237 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/output.log?Expires=1607514305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=mfxaqvsWeg0Ox2JeNo6h0X%2BZT73D%2F3jCDTD8oJKZa3Ls5i4d8%2BGJWUfyPlWOgpQ9JVYZZReB%2Fdeyu%2FJYtK6PFsx903gHTXOkVAuFMWcKcM96gmtLxkSgFy0VUAqEQBfrBh4sYYTYBZ0X7eWcRUDe0Eroz3W3jpbYLab%2BukpXgqCgJ%2FyzkDOAl4ITK%2FftNWZQ8xLKG0WFaPfsKuTyKMim7Kdo5vKRLxeritarDqFM1LoxvJSPhna6d%2BeoxF1Np6%2FulAKq8U5eoMpxvRS0lXtCoMx7T1ZRZy7YUS%2FOIdB7oTtSisPizjQdr0JptDv0FRltFMZwIZUzulF8WkNc%2BujpYg%3D%3D HTTP/1.1" 200 0
+2020-12-08 11:45:06,651 INFO    Thread-14 :10237 [upload_job.py:push():112] Uploaded file wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:45:06,664 DEBUG   Thread-15 :10237 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/config.yaml?Expires=1607514305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=Mpr%2BkhO2SMjPXxhJr2NPQLfQlKT2yWowOa3%2BSx9BQQRm8IBVVcDiNhs050%2FLfEvpvJL3PfbqHfVocmmoe%2Fg5uEb75BQmFIl0ogN5mazQglCOqLDYYMYEvPrrMwuwfowlw60jb8x511GFqm6aJzmX4bXM5kuEInxA2tocUTNlaBIWejZYR8vlL0hOVhJWB1ErWXEuirjzGDDNMSkaKV7dl5NVIpPIc0rn%2BrTnb9bj38Da4KDOkQsm9eTVkWbDeP1D97DZb9V0UNDPL5FOtRe%2B%2BumDVUvDDFeQ8ObkV017uxwJ5AS8gjuc7d01oEh%2F1M8nmfiZcYOb9tZrxuAnCssX7A%3D%3D HTTP/1.1" 200 0
+2020-12-08 11:45:06,667 INFO    Thread-15 :10237 [upload_job.py:push():112] Uploaded file wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/config.yaml
+2020-12-08 11:45:06,671 DEBUG   Thread-13 :10237 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/requirements.txt?Expires=1607514305&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=RxZ%2FZGgLL8XhXxQVhUrJy1ceElvYo%2BXxxKydxETqKKwoJ2tPvR2u1pxJ%2BS7p72zoOpVuz%2FWz1Rz%2BbyrWpbsvLsxiGuAqZON7F3XjtfbE%2FRWIPkEAXDDarmfb9VSnwZlUPH3pRnekc%2B1pqH7rVMbleU5GyMBIcNhXObz%2FnRB94xsTDrMqXn%2FweoKPurXcxJV3nQWxBSs0%2BNNMT6xLW18GmZcIg2kEmsSVQHiS9ueKQsadXveTn5XVYATkyEeIsfqFUgAiG4A0jwR8P4LdvLBWZiArVslGmvhcmFJ2JlkyV%2FhC7S30mCqoLuOuUkBJF8wvQdIP3h86I35VnppSx8Sq6w%3D%3D HTTP/1.1" 200 0
+2020-12-08 11:45:06,675 INFO    Thread-13 :10237 [upload_job.py:push():112] Uploaded file wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/files/requirements.txt
+2020-12-08 11:45:07,340 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: poll_exit
+2020-12-08 11:45:07,340 DEBUG   SenderThread:10237 [sender.py:send():89] send: request
+2020-12-08 11:45:07,340 DEBUG   SenderThread:10237 [sender.py:send_request():98] send_request: poll_exit
+2020-12-08 11:45:07,340 INFO    SenderThread:10237 [file_pusher.py:join():174] waiting for file pusher
+2020-12-08 11:45:07,344 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: get_summary
+2020-12-08 11:45:07,345 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: sampled_history
+2020-12-08 11:45:07,346 DEBUG   HandlerThread:10237 [handler.py:handle_request():54] handle_request: shutdown
+2020-12-08 11:45:07,347 INFO    HandlerThread:10237 [handler.py:finish():267] shutting down handler
+2020-12-08 11:45:08,318 INFO    WriterThread:10237 [datastore.py:close():257] close: wandb/run-20201208_114339-Facesemore_sup_nt_euclidean_Resnet_/run-Facesemore_sup_nt_euclidean_Resnet_.wandb
+2020-12-08 11:45:08,341 INFO    SenderThread:10237 [sender.py:finish():608] shutting down sender
+2020-12-08 11:45:08,341 INFO    SenderThread:10237 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-08 11:45:08,341 INFO    SenderThread:10237 [file_pusher.py:join():174] waiting for file pusher
+2020-12-08 11:45:08,342 INFO    MainThread:10237 [internal.py:handle_exit():137] Internal process exited

@@ -1,0 +1,1082 @@
+2020-12-08 11:45:30,185 INFO    MainThread:10793 [internal.py:wandb_internal():62] W&B internal server running at pid: 10793
+2020-12-08 11:45:30,188 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: check_version
+2020-12-08 11:45:30,189 INFO    WriterThread:10793 [datastore.py:open_for_write():76] open: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/run-Facesemore_sup_nt_euclidean_Resnet_.wandb
+2020-12-08 11:45:30,192 DEBUG   SenderThread:10793 [sender.py:send():89] send: header
+2020-12-08 11:45:30,193 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:45:30,193 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: check_version
+2020-12-08 11:45:30,198 DEBUG   Thread-4  :10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): pypi.org:443
+2020-12-08 11:45:30,298 DEBUG   Thread-4  :10793 [connectionpool.py:_make_request():461] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52216
+2020-12-08 11:45:30,336 DEBUG   SenderThread:10793 [sender.py:send():89] send: run
+2020-12-08 11:45:30,354 DEBUG   SenderThread:10793 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/rahulkanojia/Documents/EXP_CON/paul, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-12-08 11:45:30,440 DEBUG   SenderThread:10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:45:30,763 DEBUG   SenderThread:10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:45:30,775 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: run_start
+2020-12-08 11:45:30,780 INFO    SenderThread:10793 [dir_watcher.py:__init__():167] watching files in: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files
+2020-12-08 11:45:30,780 INFO    SenderThread:10793 [sender.py:_start_run_threads():489] run started: Facesemore_sup_nt_euclidean_Resnet_ with start time 1607427928
+2020-12-08 11:45:30,780 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:45:30,784 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:45:30,924 DEBUG   SenderThread:10793 [sender.py:send():89] send: files
+2020-12-08 11:45:30,924 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-metadata.json with policy now
+2020-12-08 11:45:30,934 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:45:30,935 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:45:30,935 DEBUG   Thread-11 :10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:45:30,935 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: status
+2020-12-08 11:45:30,939 DEBUG   SenderThread:10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:45:31,237 DEBUG   SenderThread:10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:45:31,247 DEBUG   Thread-11 :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:45:31,257 DEBUG   Thread-11 :10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-08 11:45:31,784 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-metadata.json
+2020-12-08 11:45:31,785 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/requirements.txt
+2020-12-08 11:45:31,785 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:45:31,785 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:45:31,863 DEBUG   Thread-11 :10793 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/wandb-metadata.json?Expires=1607514331&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=XYieVwbmlFUMFGO6jhyBilPOfjdKrZA9Z%2FfeLzQkLf%2FQXPn%2Fs7zDCMqTriO%2B7xMG11iOpFBUJNYAr59z0XTIZwUg7pVYV8nCnhM%2BsqswxE6q5hvOJm0GlatHp1HOMbzkwPLlpo8ubghfzIDZs%2BFtavpuTYXZtYry%2FQvRX4%2Fe08su9%2BOflujLD%2B2Dl3MWQaGX0q5sgeqdtj3dssef0wCoXsfeDMbch357DkBY0E0%2FGYTRfSoZ08PD%2FQ2o4HVNnaWjaJj7IiuXW4%2Bt9Sy7r4%2FQkYByFEfzJTSdRMuKwbjFpF12HHes1jAAmlZpFLbPrPECCvnxI1SrSXmGKTY5fuyb3g%3D%3D HTTP/1.1" 200 0
+2020-12-08 11:45:31,866 INFO    Thread-11 :10793 [upload_job.py:push():112] Uploaded file /tmp/tmpxp9f6gd4wandb/1iu869ld-wandb-metadata.json
+2020-12-08 11:45:32,784 DEBUG   Thread-5  :10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:45:33,084 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:45:34,237 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:45:36,523 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:45:38,757 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:45:39,045 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:45:43,293 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:45:43,596 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:45:46,269 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:45:46,269 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:45:46,269 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: status
+2020-12-08 11:45:46,273 DEBUG   SenderThread:10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:45:46,559 DEBUG   SenderThread:10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:45:47,805 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:45:48,118 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:45:51,552 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:45:51,552 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:45:51,604 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:45:51,840 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:45:51,841 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:45:51,866 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:45:52,319 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:45:52,533 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:45:52,534 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:45:52,538 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:45:52,843 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:45:53,350 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:45:53,351 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:45:53,355 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:45:53,844 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:45:54,230 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:45:54,231 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:45:54,238 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:45:54,521 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:45:54,846 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:45:55,064 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:45:55,064 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:45:55,068 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:45:55,847 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:45:55,891 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:45:55,892 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:45:55,896 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:45:56,731 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:45:56,731 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:45:56,737 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:45:56,843 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:45:56,848 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:45:57,021 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:45:57,556 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:45:57,557 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:45:57,561 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:45:57,850 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:45:58,393 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:45:58,393 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:45:58,397 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:45:58,851 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:45:59,239 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:45:59,240 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:45:59,246 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:45:59,533 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:45:59,852 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:00,078 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:00,079 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:00,083 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:00,877 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:46:00,877 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:00,940 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:00,940 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:00,977 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:01,367 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:46:01,564 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:46:01,565 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:46:01,565 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: status
+2020-12-08 11:46:01,569 DEBUG   SenderThread:10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:46:01,657 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:46:01,867 DEBUG   SenderThread:10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:46:01,871 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:01,871 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:01,875 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:01,878 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:02,677 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:02,678 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:02,682 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:02,879 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:03,500 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:03,500 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:03,507 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:03,792 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:46:03,880 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:04,322 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:04,322 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:04,328 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:04,882 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:05,153 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:05,153 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:05,158 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:05,883 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:05,927 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:46:05,979 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:05,979 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:06,006 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:06,221 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:46:06,815 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:06,815 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:06,821 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:06,884 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:07,630 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:07,631 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:07,635 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:07,885 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:08,476 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:08,476 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:08,482 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:08,776 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:46:08,889 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:46:08,889 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:09,307 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:09,307 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:09,340 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:09,890 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:10,147 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:10,147 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:10,194 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:10,454 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:46:10,891 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:11,001 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:11,002 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:11,038 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:11,323 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:46:11,822 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:11,823 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:11,827 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:11,893 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:12,663 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:12,664 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:12,708 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:12,894 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:13,514 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:13,515 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:13,521 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:13,808 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:46:13,895 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:14,332 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:14,332 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:14,336 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:14,897 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:15,016 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:46:15,122 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:15,122 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:15,146 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:15,898 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:15,945 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:15,946 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:15,951 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:16,240 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:46:16,800 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:16,800 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:16,805 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:16,873 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:46:16,873 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:46:16,873 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: status
+2020-12-08 11:46:16,878 DEBUG   SenderThread:10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:46:16,902 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:46:16,902 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:17,167 DEBUG   SenderThread:10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:46:17,626 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:17,626 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:17,631 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:17,903 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:18,456 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:18,456 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:18,463 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:18,751 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:46:18,904 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:19,295 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:19,296 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:19,325 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:19,528 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:46:19,906 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:20,148 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:20,149 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:20,154 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:20,907 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:20,973 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:20,973 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:20,978 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:21,280 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:46:21,814 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:21,815 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:21,819 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:21,909 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:22,678 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:22,679 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:22,683 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:22,910 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:23,492 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:23,493 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:23,498 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:23,791 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:46:23,911 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:24,095 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:46:24,382 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:24,382 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:24,461 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:24,913 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:25,207 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:25,207 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:25,212 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:25,916 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:46:25,917 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:26,031 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:26,031 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:26,064 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:26,351 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:46:26,855 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:26,855 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:26,861 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:26,917 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:27,690 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:27,691 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:27,695 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:27,919 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:28,510 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:28,510 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:28,515 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:28,620 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:46:28,920 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:29,319 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:29,320 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:29,371 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:29,922 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:30,155 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:30,155 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:30,160 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:30,923 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:31,002 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:31,002 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:31,007 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:31,813 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:31,813 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:31,818 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:31,924 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:32,173 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:46:32,174 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:46:32,174 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: status
+2020-12-08 11:46:32,179 DEBUG   SenderThread:10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:46:32,474 DEBUG   SenderThread:10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:46:32,647 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:32,648 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:32,651 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:32,925 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:33,132 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:46:33,515 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:33,515 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:33,519 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:33,969 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:46:33,970 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:34,377 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:34,377 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:34,382 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:34,971 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:35,245 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:35,245 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:35,250 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:35,972 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:36,083 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:36,083 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:36,090 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:36,374 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:46:36,953 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:36,953 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:36,958 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:36,973 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:37,704 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:46:37,789 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:37,790 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:37,794 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:37,975 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:38,638 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:38,639 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:38,671 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:38,976 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:39,497 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:39,498 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:39,502 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:39,977 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:40,355 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:40,356 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:40,360 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:40,978 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:41,178 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:41,179 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:41,183 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:41,980 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:42,029 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:42,029 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:42,033 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:42,222 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:46:42,913 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:42,914 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:42,918 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:43,030 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:46:43,030 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:43,791 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:43,792 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:43,797 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:44,031 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:44,609 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:44,610 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:44,614 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:45,032 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:45,473 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:45,473 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:45,477 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:46,034 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:46,313 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:46,313 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:46,320 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:46,639 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:46:46,801 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:46:47,035 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:47,139 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:47,139 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:47,144 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:47,479 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:46:47,480 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:46:47,480 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: status
+2020-12-08 11:46:47,483 DEBUG   SenderThread:10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:46:47,776 DEBUG   SenderThread:10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:46:47,983 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:47,984 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:47,988 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:48,036 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:48,836 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:48,836 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:48,841 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:49,038 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:49,698 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:49,699 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:49,703 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:50,039 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:50,540 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:50,540 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:50,545 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:51,043 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:46:51,044 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:51,335 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:46:51,379 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:51,380 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:51,404 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:52,045 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:52,207 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:52,207 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:52,212 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:53,037 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:53,038 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:53,046 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:53,090 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:53,879 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:53,879 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:53,884 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:54,048 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:54,753 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:54,754 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:54,758 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:55,049 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:55,626 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:55,627 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:55,631 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:55,860 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:46:56,050 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:56,432 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:56,432 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:56,438 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:56,758 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:46:57,052 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:57,273 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:57,274 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:57,278 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:58,054 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:58,122 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:58,123 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:58,144 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:58,973 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:58,973 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:58,978 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:46:59,057 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:46:59,057 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:46:59,812 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:46:59,812 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:46:59,832 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:00,058 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:00,417 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:47:00,656 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:00,656 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:00,661 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:01,060 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:01,524 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:01,524 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:01,528 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:02,062 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:02,338 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:02,339 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:02,343 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:02,782 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:47:02,783 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:47:02,783 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: status
+2020-12-08 11:47:02,788 DEBUG   SenderThread:10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:47:03,063 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:03,075 DEBUG   SenderThread:10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:47:03,174 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:03,174 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:03,179 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:04,046 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:04,046 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:04,065 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:04,068 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:04,875 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:04,875 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:04,879 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:04,979 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:47:05,067 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:05,704 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:05,705 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:05,709 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:06,068 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:06,528 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:06,528 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:06,565 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:06,846 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:47:07,069 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:07,362 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:07,363 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:07,367 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:08,072 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:47:08,073 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:08,194 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:08,194 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:08,199 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:09,034 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:09,035 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:09,040 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:09,074 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:09,508 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:47:09,879 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:09,880 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:09,884 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:10,075 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:10,754 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:10,755 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:10,759 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:11,077 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:11,699 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:11,699 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:11,725 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:12,078 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:12,505 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:12,505 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:12,544 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:13,079 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:13,358 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:13,359 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:13,364 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:14,033 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:47:14,081 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:14,210 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:14,211 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:14,215 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:15,082 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:15,114 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:15,114 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:15,119 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:15,983 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:15,984 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:15,989 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:16,085 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:47:16,086 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:16,816 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:16,817 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:16,824 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:17,087 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:17,124 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:47:17,648 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:17,649 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:17,653 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:18,081 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:47:18,081 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:47:18,081 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: status
+2020-12-08 11:47:18,085 DEBUG   SenderThread:10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:47:18,088 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:18,518 DEBUG   SenderThread:10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:47:18,522 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:18,522 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:18,527 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:18,574 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:47:19,090 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:19,304 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:19,304 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:19,309 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:20,091 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:20,128 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:20,129 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:20,170 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:20,947 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:20,947 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:20,952 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:21,092 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:21,757 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:21,757 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:21,762 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:22,093 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:22,580 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:22,580 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:22,598 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:23,094 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:47:23,096 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:23,420 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:23,421 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:23,425 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:24,097 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:24,252 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:24,252 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:24,279 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:25,101 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:47:25,101 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:25,118 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:25,119 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:25,123 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:25,953 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:25,953 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:25,958 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:26,102 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:26,791 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:26,791 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:26,795 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:27,104 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:27,612 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:47:27,626 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:27,626 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:27,630 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:27,914 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:47:28,106 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:28,447 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:28,448 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:28,509 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:29,107 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:29,268 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:29,268 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:29,316 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:30,088 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:30,089 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:30,093 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:30,108 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:30,916 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:30,917 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:30,921 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:31,109 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:31,741 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:31,741 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:31,746 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:32,110 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:32,155 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:47:32,542 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:32,542 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:32,546 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:33,114 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:47:33,115 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:33,387 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:33,387 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:33,391 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:33,523 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:47:33,524 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:47:33,524 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: status
+2020-12-08 11:47:33,529 DEBUG   SenderThread:10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:47:33,824 DEBUG   SenderThread:10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:47:34,115 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:34,271 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:34,272 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:34,301 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:35,117 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:35,148 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:35,149 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:35,153 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:35,976 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:35,977 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:35,981 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:36,118 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:36,668 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:47:36,802 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:36,802 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:36,807 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:37,120 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:37,606 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:37,606 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:37,610 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:38,121 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:38,427 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:38,427 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:38,485 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:38,721 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:47:39,122 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:39,284 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:39,285 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:39,290 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:40,103 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:40,103 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:40,108 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:40,123 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:40,938 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:40,939 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:40,943 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:41,126 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:47:41,127 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:41,182 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:47:41,810 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:41,810 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:41,815 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:42,128 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:42,635 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:42,636 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:42,662 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:43,129 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:43,445 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:43,445 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:43,450 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:44,131 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:44,280 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:44,281 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:44,285 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:45,117 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:45,117 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:45,122 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:45,132 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:45,714 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:47:45,944 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:45,944 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:45,948 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:46,133 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:46,799 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:46,800 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:46,804 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:47,134 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:47,654 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:47,654 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:47,739 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:48,135 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:48,483 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:48,484 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:48,490 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:48,770 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:47:48,829 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:47:48,830 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:47:48,830 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: status
+2020-12-08 11:47:48,834 DEBUG   SenderThread:10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:47:49,115 DEBUG   SenderThread:10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:47:49,136 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:49,321 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:49,322 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:49,327 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:50,158 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:47:50,159 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:50,161 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:50,162 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:50,183 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:50,255 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:47:50,996 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:50,997 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:51,035 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:51,160 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:51,796 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:51,797 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:51,816 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:52,161 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:52,597 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:52,597 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:52,616 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:53,162 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:53,454 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:53,454 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:53,475 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:54,164 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:54,323 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:54,324 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:54,341 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:54,785 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:47:55,151 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:55,152 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:55,175 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:55,176 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:56,029 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:56,029 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:56,068 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:56,177 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:56,893 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:56,893 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:56,899 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:57,178 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:57,761 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:57,762 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:57,766 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:58,182 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:47:58,182 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:58,622 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:58,623 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:58,628 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:47:58,947 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:47:59,184 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:47:59,310 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:47:59,461 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:47:59,462 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:47:59,466 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:00,185 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:00,300 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:00,301 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:00,361 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:01,096 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:01,096 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:01,102 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:01,187 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:01,945 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:01,945 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:01,949 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:02,188 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:02,752 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:02,752 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:02,756 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:03,189 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:03,526 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:03,526 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:03,530 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:03,875 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:48:04,121 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:48:04,122 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:48:04,122 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: status
+2020-12-08 11:48:04,127 DEBUG   SenderThread:10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:48:04,190 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:04,418 DEBUG   SenderThread:10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:48:04,421 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:04,422 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:04,425 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:05,171 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:05,171 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:05,193 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:05,195 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:06,024 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:06,025 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:06,030 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:06,208 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:48:06,209 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:06,887 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:06,909 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:06,913 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:07,210 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:07,736 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:07,736 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:07,741 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:08,211 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:08,394 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:48:08,553 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:08,553 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:08,557 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:09,213 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:09,384 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:09,384 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:09,413 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:09,697 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:48:10,214 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:10,218 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:10,219 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:10,223 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:11,062 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:11,063 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:11,066 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:11,216 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:11,851 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:11,852 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:11,855 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:12,217 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:12,671 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:12,671 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:12,676 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:12,945 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:48:13,218 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:13,504 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:13,504 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:13,508 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:14,219 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:14,331 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:14,331 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:14,335 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:15,160 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:15,160 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:15,164 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:15,229 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:48:15,229 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:15,996 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:15,997 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:16,017 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:16,230 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:16,820 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:16,820 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:16,825 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:17,231 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:17,487 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:48:17,661 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:17,661 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:17,666 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:18,233 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:18,481 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:18,482 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:18,497 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:19,234 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:19,321 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:19,322 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:19,326 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:19,429 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:48:19,430 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:48:19,430 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: status
+2020-12-08 11:48:19,434 DEBUG   SenderThread:10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:48:19,731 DEBUG   SenderThread:10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:48:20,165 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:20,166 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:20,171 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:20,235 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:20,481 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:48:21,034 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:21,034 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:21,039 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:21,237 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:21,850 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:21,850 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:21,855 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:22,001 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:48:22,238 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:22,679 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:22,679 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:22,684 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:23,241 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:48:23,241 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:23,524 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:23,525 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:23,529 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:24,242 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:24,356 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:24,356 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:24,361 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:25,191 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:25,191 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:25,195 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:25,243 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:26,014 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:26,015 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:26,046 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:26,245 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:26,531 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:48:26,853 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:26,854 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:26,859 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:27,246 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:27,684 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:27,685 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:27,689 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:28,248 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:28,515 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:28,515 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:28,520 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:29,249 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:29,351 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:29,351 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:29,379 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:30,200 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:30,200 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:30,207 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:30,250 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:30,503 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:48:31,060 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:31,060 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:31,064 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:31,093 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:48:31,253 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:48:31,254 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:31,884 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:31,885 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:31,888 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:32,255 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:32,712 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:32,712 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:32,771 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:33,256 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:33,555 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:33,556 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:33,560 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:34,258 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:34,377 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:34,377 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:34,398 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:34,737 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:48:34,737 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:48:34,737 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: status
+2020-12-08 11:48:34,743 DEBUG   SenderThread:10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:48:35,030 DEBUG   SenderThread:10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:48:35,207 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:35,208 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:35,215 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:35,259 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:35,627 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:48:36,058 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:36,058 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:36,062 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:36,260 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:36,920 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:36,921 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:36,950 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:37,261 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:37,773 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:37,774 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:37,787 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:38,263 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:38,611 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:38,611 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:38,616 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:38,618 DEBUG   SenderThread:10793 [sender.py:send():89] send: history
+2020-12-08 11:48:38,618 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:38,621 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:38,879 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: pause
+2020-12-08 11:48:38,879 INFO    HandlerThread:10793 [handler.py:handle_request_pause():222] stopping system metrics thread
+2020-12-08 11:48:39,002 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:48:39,274 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:48:39,274 INFO    Thread-8  :10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:49,292 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:48:50,035 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: status
+2020-12-08 11:48:50,036 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:48:50,036 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: status
+2020-12-08 11:48:50,040 DEBUG   SenderThread:10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:48:50,326 DEBUG   SenderThread:10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:48:51,463 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: resume
+2020-12-08 11:48:51,463 INFO    HandlerThread:10793 [handler.py:handle_request_resume():217] starting system metrics thread
+2020-12-08 11:48:51,552 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: poll_exit
+2020-12-08 11:48:51,552 DEBUG   SenderThread:10793 [sender.py:send():89] send: exit
+2020-12-08 11:48:51,553 INFO    SenderThread:10793 [sender.py:send_exit():167] handling exit code: 0
+2020-12-08 11:48:51,553 INFO    SenderThread:10793 [sender.py:send_exit():175] send defer
+2020-12-08 11:48:51,553 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:48:51,554 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: poll_exit
+2020-12-08 11:48:51,554 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:48:51,555 INFO    HandlerThread:10793 [handler.py:handle_request_defer():68] handle defer: 0
+2020-12-08 11:48:51,555 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:48:51,555 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:48:51,555 INFO    SenderThread:10793 [sender.py:send_request_defer():184] handle sender defer: 0
+2020-12-08 11:48:51,555 INFO    SenderThread:10793 [sender.py:send_request_defer():220] send defer: 1
+2020-12-08 11:48:51,556 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:48:51,556 INFO    HandlerThread:10793 [handler.py:handle_request_defer():68] handle defer: 1
+2020-12-08 11:48:51,610 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:48:51,610 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:48:51,610 INFO    SenderThread:10793 [sender.py:send_request_defer():184] handle sender defer: 1
+2020-12-08 11:48:51,610 INFO    SenderThread:10793 [sender.py:send_request_defer():220] send defer: 2
+2020-12-08 11:48:51,611 DEBUG   SenderThread:10793 [sender.py:send():89] send: stats
+2020-12-08 11:48:51,612 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:48:51,612 INFO    HandlerThread:10793 [handler.py:handle_request_defer():68] handle defer: 2
+2020-12-08 11:48:51,613 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:48:51,613 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:48:51,613 INFO    SenderThread:10793 [sender.py:send_request_defer():184] handle sender defer: 2
+2020-12-08 11:48:51,613 INFO    SenderThread:10793 [sender.py:send_request_defer():220] send defer: 3
+2020-12-08 11:48:51,613 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:48:51,614 INFO    HandlerThread:10793 [handler.py:handle_request_defer():68] handle defer: 3
+2020-12-08 11:48:51,614 DEBUG   SenderThread:10793 [sender.py:send():89] send: summary
+2020-12-08 11:48:51,618 INFO    SenderThread:10793 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-08 11:48:51,619 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:48:51,619 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:48:51,619 INFO    SenderThread:10793 [sender.py:send_request_defer():184] handle sender defer: 3
+2020-12-08 11:48:51,619 INFO    SenderThread:10793 [sender.py:send_request_defer():220] send defer: 4
+2020-12-08 11:48:51,620 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:48:51,620 INFO    HandlerThread:10793 [handler.py:handle_request_defer():68] handle defer: 4
+2020-12-08 11:48:51,620 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:48:51,620 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:48:51,620 INFO    SenderThread:10793 [sender.py:send_request_defer():184] handle sender defer: 4
+2020-12-08 11:48:51,621 INFO    SenderThread:10793 [dir_watcher.py:finish():280] shutting down directory watcher
+2020-12-08 11:48:52,278 INFO    SenderThread:10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:48:52,279 INFO    SenderThread:10793 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:52,279 INFO    SenderThread:10793 [dir_watcher.py:finish():309] scan: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files
+2020-12-08 11:48:52,280 INFO    SenderThread:10793 [dir_watcher.py:finish():315] scan save: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-metadata.json wandb-metadata.json
+2020-12-08 11:48:52,280 INFO    SenderThread:10793 [dir_watcher.py:finish():315] scan save: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json wandb-summary.json
+2020-12-08 11:48:52,281 INFO    SenderThread:10793 [dir_watcher.py:finish():315] scan save: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/requirements.txt requirements.txt
+2020-12-08 11:48:52,281 INFO    SenderThread:10793 [dir_watcher.py:finish():315] scan save: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log output.log
+2020-12-08 11:48:52,288 DEBUG   Thread-13 :10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:48:52,295 INFO    SenderThread:10793 [dir_watcher.py:finish():315] scan save: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/config.yaml config.yaml
+2020-12-08 11:48:52,296 DEBUG   Thread-14 :10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:48:52,302 INFO    SenderThread:10793 [sender.py:send_request_defer():220] send defer: 5
+2020-12-08 11:48:52,308 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:48:52,309 INFO    HandlerThread:10793 [handler.py:handle_request_defer():68] handle defer: 5
+2020-12-08 11:48:52,310 DEBUG   Thread-16 :10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:48:52,310 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:48:52,310 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:48:52,311 DEBUG   Thread-15 :10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-08 11:48:52,312 INFO    SenderThread:10793 [sender.py:send_request_defer():184] handle sender defer: 5
+2020-12-08 11:48:52,313 INFO    SenderThread:10793 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-08 11:48:52,313 INFO    SenderThread:10793 [sender.py:send_request_defer():220] send defer: 6
+2020-12-08 11:48:52,314 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:48:52,314 INFO    HandlerThread:10793 [handler.py:handle_request_defer():68] handle defer: 6
+2020-12-08 11:48:52,314 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:48:52,314 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:48:52,314 INFO    SenderThread:10793 [sender.py:send_request_defer():184] handle sender defer: 6
+2020-12-08 11:48:52,588 DEBUG   Thread-14 :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:48:52,594 DEBUG   Thread-13 :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:48:52,599 DEBUG   Thread-14 :10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-08 11:48:52,607 DEBUG   Thread-13 :10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-08 11:48:52,609 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:48:52,610 DEBUG   Thread-15 :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:48:52,617 DEBUG   Thread-16 :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-08 11:48:52,622 DEBUG   Thread-15 :10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-08 11:48:52,630 DEBUG   Thread-16 :10793 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-08 11:48:52,884 DEBUG   Thread-5  :10793 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/file_stream HTTP/1.1" 200 None
+2020-12-08 11:48:52,888 INFO    SenderThread:10793 [sender.py:send_request_defer():220] send defer: 7
+2020-12-08 11:48:52,888 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:48:52,888 INFO    HandlerThread:10793 [handler.py:handle_request_defer():68] handle defer: 7
+2020-12-08 11:48:52,889 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:48:52,889 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:48:52,889 INFO    SenderThread:10793 [sender.py:send_request_defer():184] handle sender defer: 7
+2020-12-08 11:48:52,889 INFO    SenderThread:10793 [sender.py:send_request_defer():220] send defer: 8
+2020-12-08 11:48:52,890 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: defer
+2020-12-08 11:48:52,891 DEBUG   SenderThread:10793 [sender.py:send():89] send: final
+2020-12-08 11:48:52,891 INFO    HandlerThread:10793 [handler.py:handle_request_defer():68] handle defer: 8
+2020-12-08 11:48:52,891 DEBUG   SenderThread:10793 [sender.py:send():89] send: footer
+2020-12-08 11:48:52,892 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:48:52,892 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: defer
+2020-12-08 11:48:52,892 INFO    SenderThread:10793 [sender.py:send_request_defer():184] handle sender defer: 8
+2020-12-08 11:48:53,334 DEBUG   Thread-14 :10793 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/requirements.txt?Expires=1607514532&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=PwYNlIdF2GlWjtDBCZcWtsTFO7LF7SxEcp5%2BaMQAzm1g5HPBUeUEiKOPBvMaTful4FcdrlG%2Bcd%2BMPsolNpBHV%2FV0Myu8xOg0vB%2FFB6vbApHeIy8mTSas3SaCYcgsYajor%2B6ydXNQS459ro8PlhK5JXEw6B%2BMzEQB4z4yODlcggZyDOb2AfRg3Pkx800HTGIeQf%2FXSISCujWFO%2B8lX4vWqWSeBoKJrcNTUhY7dOrwlY5hFAmuwZd4ahf6Ejby1s%2B7X%2Fqg0Wuz3YPrtEfyfX0EjKwJ8LMLbmDmR1x10ux3qY4GOrvOPFkitTonvYsZtq0mqKXOTRSa35l%2BqKB3ezWFlg%3D%3D HTTP/1.1" 200 0
+2020-12-08 11:48:53,337 INFO    Thread-14 :10793 [upload_job.py:push():112] Uploaded file wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/requirements.txt
+2020-12-08 11:48:53,339 DEBUG   Thread-13 :10793 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/wandb-summary.json?Expires=1607514532&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=XKmvnHKFGdahHAKy%2BbMxECD%2FRVwCHwlBG9Ol%2FWky8K4o8NBdozKST86S8WpgJECs88EL3P5nTjfs4hTS7APUiol5mC5M6T9cRAaVSDWCKU36j16PAzgXmFHLnDHyXb3I3ulz7DVh63Ik5hHOVdn2WvTEEozkBhVf%2FFtzdYvYUlATBFAZxuqUFyDbpma4wHpmIkCOaFXx%2FAHZh3fkag4KyUC2nQpiOKnngA33FOsl7Wg4iDc%2BqlB%2B4BLgwPdFvOsnJ%2FBJTvvRJKLue7N9RRDGP%2FuYOYO5pUBEtp7gdpVLz9ZkGUO0SJtgdUTR1Xym6iQmoG1Fq7CgsnRpEwO%2BzDJWkQ%3D%3D HTTP/1.1" 200 0
+2020-12-08 11:48:53,341 INFO    Thread-13 :10793 [upload_job.py:push():112] Uploaded file wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/wandb-summary.json
+2020-12-08 11:48:53,355 DEBUG   Thread-15 :10793 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/output.log?Expires=1607514532&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=nSLlbFf5kLVds0f58z8HPBpTWdnvNALJyrUixyG4yoQKhJoyX0aVOnchEC034GaNbrTJGBUu2mdDK%2FquiX6yA38uVz8S6KFIICPaxNn%2Fvn5w2%2B3qBRtI1ZSU9y8mRKyFhzm6WetH1s3o%2FmY8APcfWg2OT%2FSoQ6OJq7qC4IXUYb94mTNt2bWQaWC1e28sMfFTC4yit5c1OL%2BWsKr0ytRabL8EX3zB%2BvzOfGWNoLRy8S1LmJVhK%2FdnBkJLwbruXRlsy3iSs2XbzhGFf5qiJwobp4iHdEb8Vdy2ha8CCCNFtN4N%2Bw%2BGauFjvBzb%2BQIMWKHhKAtXzWIr%2F%2BzAxIlyJnuESg%3D%3D HTTP/1.1" 200 0
+2020-12-08 11:48:53,358 INFO    Thread-15 :10793 [upload_job.py:push():112] Uploaded file wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/output.log
+2020-12-08 11:48:53,366 DEBUG   Thread-16 :10793 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/Facesemore_sup_nt_euclidean_Resnet_/config.yaml?Expires=1607514532&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=sukL4Zr7waMVK5RMrn6YkjAN1ObSWP%2BtpRqr4jd1oVdC8VFsOkGcCniAKjrHoagwQNfBrVdX2AR4p%2BdBjgYQD4LOWhrET0WeikpYRIASBrjfKJ%2FeqcRvOELQ3JHOstsasNGFdLuuWhZdeqC5PCeqw%2FSYh5sd1xYBdwPND2Wv%2BKwu%2B9P%2BPdBSmcGm69OvImEsn7MoWmnH%2FSwC9%2BW7llbra6eQd0VRNnUCfga6314X8eGDtBrfsntuu811%2FLzqytoZhTiZmX6JZkFoCyRzZp0DieZMyUotkVChXoZk5T%2FJQsZIvK9AJmrRFadyUo2zLC2EtHjeurO3NLs2Q9RNJ8pNOw%3D%3D HTTP/1.1" 200 0
+2020-12-08 11:48:53,369 INFO    Thread-16 :10793 [upload_job.py:push():112] Uploaded file wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/files/config.yaml
+2020-12-08 11:48:53,565 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: poll_exit
+2020-12-08 11:48:53,565 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:48:53,566 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: poll_exit
+2020-12-08 11:48:55,570 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: poll_exit
+2020-12-08 11:48:55,571 DEBUG   SenderThread:10793 [sender.py:send():89] send: request
+2020-12-08 11:48:55,571 DEBUG   SenderThread:10793 [sender.py:send_request():98] send_request: poll_exit
+2020-12-08 11:48:55,571 INFO    SenderThread:10793 [file_pusher.py:join():174] waiting for file pusher
+2020-12-08 11:48:55,575 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: get_summary
+2020-12-08 11:48:55,577 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: sampled_history
+2020-12-08 11:48:55,580 DEBUG   HandlerThread:10793 [handler.py:handle_request():54] handle_request: shutdown
+2020-12-08 11:48:55,580 INFO    HandlerThread:10793 [handler.py:finish():267] shutting down handler
+2020-12-08 11:48:55,891 INFO    WriterThread:10793 [datastore.py:close():257] close: wandb/run-20201208_114528-Facesemore_sup_nt_euclidean_Resnet_/run-Facesemore_sup_nt_euclidean_Resnet_.wandb
+2020-12-08 11:48:56,572 INFO    SenderThread:10793 [sender.py:finish():608] shutting down sender
+2020-12-08 11:48:56,572 INFO    SenderThread:10793 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-08 11:48:56,572 INFO    SenderThread:10793 [file_pusher.py:join():174] waiting for file pusher
+2020-12-08 11:48:56,574 INFO    MainThread:10793 [internal.py:handle_exit():137] Internal process exited

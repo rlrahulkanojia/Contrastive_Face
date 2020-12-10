@@ -1,0 +1,63 @@
+2020-12-07 19:19:07,193 INFO    MainThread:26927 [wandb_init.py:_log_setup():293] Logging user logs to wandb/run-20201207_191906-Data1_L1_Dist_0_M0/logs/debug.log
+2020-12-07 19:19:07,194 INFO    MainThread:26927 [wandb_init.py:_log_setup():294] Logging internal logs to wandb/run-20201207_191906-Data1_L1_Dist_0_M0/logs/debug-internal.log
+2020-12-07 19:19:07,194 INFO    MainThread:26927 [wandb_setup.py:_flush():69] setting env: {'notebook_name': 'Experiments', 'disable_code': 'True'}
+2020-12-07 19:19:07,194 INFO    MainThread:26927 [wandb_setup.py:_flush():69] setting user settings: {'email': 'rahul.kanojia@hyperverge.co'}
+2020-12-07 19:19:07,194 INFO    MainThread:26927 [wandb_setup.py:_flush():69] multiprocessing start_methods=fork,spawn,forkserver
+2020-12-07 19:19:07,194 INFO    MainThread:26927 [wandb_setup.py:_flush():69] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f8910f27fd0>
+2020-12-07 19:19:10,519 INFO    MainThread:26927 [wandb_run.py:_console_start():1290] atexit reg
+2020-12-07 19:19:10,547 INFO    MainThread:26927 [wandb_run.py:_redirect():1160] redirect: SettingsConsole.WRAP
+2020-12-07 19:19:10,549 INFO    MainThread:26927 [wandb_run.py:_redirect():1191] Wrapping output streams.
+2020-12-07 19:19:10,550 INFO    MainThread:26927 [wandb_run.py:_redirect():1207] Redirects installed.
+2020-12-07 19:19:10,553 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:19:24,390 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:22:24,645 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:22:28,653 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:22:29,850 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:22:30,080 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:22:30,099 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:22:38,983 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:25:38,582 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:25:44,737 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:25:46,263 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:25:58,177 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:26:07,345 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:27:27,985 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:27:28,256 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:29:32,224 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:29:32,227 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:29:33,302 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:29:33,361 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:29:45,487 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:29:48,418 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:29:52,846 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:30:16,725 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:30:30,612 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:30:30,615 ERROR   MainThread:26927 [util.py:get_module():141] Error importing optional module plotly.tools
+Traceback (most recent call last):
+  File "/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/wandb/util.py", line 136, in get_module
+    return import_module(name)
+  File "/usr/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'plotly'
+2020-12-07 19:30:30,669 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:30:42,066 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:36:25,441 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:36:25,451 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:36:35,301 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:43:40,840 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:43:40,879 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:43:43,166 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:43:43,193 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:44:03,549 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:44:03,576 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:44:15,689 INFO    MainThread:26927 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 19:44:15,715 INFO    MainThread:26927 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 19:49:26,899 INFO    MainThread:26927 [wandb_run.py:_atexit_cleanup():1263] got exitcode: 0
+2020-12-07 19:49:26,902 INFO    MainThread:26927 [wandb_run.py:_restore():1235] restore

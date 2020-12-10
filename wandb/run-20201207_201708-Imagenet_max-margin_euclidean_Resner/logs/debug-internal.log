@@ -1,0 +1,573 @@
+2020-12-07 20:17:11,163 INFO    MainThread:28855 [internal.py:wandb_internal():62] W&B internal server running at pid: 28855
+2020-12-07 20:17:11,167 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: check_version
+2020-12-07 20:17:11,167 INFO    WriterThread:28855 [datastore.py:open_for_write():76] open: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/run-Imagenet_max-margin_euclidean_Resner.wandb
+2020-12-07 20:17:11,171 DEBUG   SenderThread:28855 [sender.py:send():89] send: header
+2020-12-07 20:17:11,171 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:17:11,171 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: check_version
+2020-12-07 20:17:11,177 DEBUG   Thread-4  :28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): pypi.org:443
+2020-12-07 20:17:11,275 DEBUG   Thread-4  :28855 [connectionpool.py:_make_request():461] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52216
+2020-12-07 20:17:11,310 DEBUG   SenderThread:28855 [sender.py:send():89] send: run
+2020-12-07 20:17:11,419 DEBUG   SenderThread:28855 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/rahulkanojia/Documents/EXP_CON/paul, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-12-07 20:17:11,495 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:17:11,837 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:17:11,849 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: run_start
+2020-12-07 20:17:11,855 INFO    SenderThread:28855 [dir_watcher.py:__init__():167] watching files in: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files
+2020-12-07 20:17:11,855 INFO    SenderThread:28855 [sender.py:_start_run_threads():489] run started: Imagenet_max-margin_euclidean_Resner with start time 1607372228
+2020-12-07 20:17:11,855 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:17:11,996 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:17:12,320 DEBUG   SenderThread:28855 [sender.py:send():89] send: files
+2020-12-07 20:17:12,321 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-metadata.json with policy now
+2020-12-07 20:17:12,331 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:17:12,331 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:17:12,332 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: status
+2020-12-07 20:17:12,332 DEBUG   Thread-11 :28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:17:12,336 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:17:12,649 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:17:12,671 DEBUG   Thread-11 :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:17:12,679 DEBUG   Thread-11 :28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-07 20:17:12,859 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:17:12,860 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/requirements.txt
+2020-12-07 20:17:12,860 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-metadata.json
+2020-12-07 20:17:12,860 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/output.log
+2020-12-07 20:17:13,279 DEBUG   Thread-11 :28855 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/wandb-metadata.json?Expires=1607458632&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=Yo7fSZxoCx8J7u3LjsJm27bMK%2Bm9Nr3PYITnTK3B014OgCYsUaOW%2F8Ga02EzpW1V6c%2BZa7fF6KS%2FPRoAgnaNKFTbLhAlF7eqNSd4rO5aA2pDyLkXC8upU%2FcvNtED8mA8shWNBPBFtUK7hqTdSGAovcvOEVWPVwgN4tt8LLCnvU6oY86QsRfTd8bm%2BuyRgNCI4GuKoTMxTJfMz2qjC29SEpwtlqnOfZVRGtAM7DBfo0sMqmBJsVPAv33OJHqykVVh4RCxlcOlV9JVTyoGlsWA6ydumEnTWFRX2n9c2eL8CXw59fh6dJVb2UZqxWcoo2hPR8Q4oWJQa8qFZIWNa17f8A%3D%3D HTTP/1.1" 200 0
+2020-12-07 20:17:13,281 INFO    Thread-11 :28855 [upload_job.py:push():112] Uploaded file /tmp/tmpx_56zs73wandb/3d3e3ibs-wandb-metadata.json
+2020-12-07 20:17:13,859 DEBUG   Thread-5  :28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:17:14,162 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:17:15,289 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:17:17,594 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:17:19,793 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:17:20,080 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:17:24,302 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:17:24,616 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:17:27,657 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:17:27,657 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:17:27,657 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: status
+2020-12-07 20:17:27,661 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:17:27,958 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:17:28,816 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:17:29,164 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:17:33,325 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:17:33,614 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:17:33,615 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:17:33,635 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:17:33,648 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:17:33,997 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:17:33,998 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/output.log
+2020-12-07 20:17:35,965 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:17:36,611 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:17:36,612 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:17:36,616 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:17:37,001 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:17:37,839 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:17:38,213 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:17:39,785 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:17:39,785 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:17:39,790 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:17:40,005 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:17:42,090 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:17:42,352 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:17:42,777 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:17:42,778 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:17:42,782 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:17:42,965 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:17:42,965 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:17:42,965 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: status
+2020-12-07 20:17:42,969 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:17:43,009 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:17:43,265 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:17:45,073 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:17:45,866 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:17:45,867 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:17:45,901 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:17:46,013 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:17:46,874 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:17:47,202 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:17:48,838 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:17:48,839 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:17:48,844 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:17:49,017 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:17:51,166 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:17:51,450 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:17:51,825 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:17:51,826 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:17:51,848 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:17:52,020 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:17:54,116 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:17:54,855 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:17:54,857 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:17:54,861 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:17:55,025 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:17:55,969 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:17:56,344 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:17:57,842 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:17:57,843 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:17:57,847 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:17:58,029 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:17:58,270 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:17:58,270 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:17:58,271 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: status
+2020-12-07 20:17:58,276 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:17:58,568 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:18:00,136 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:18:00,481 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:18:00,841 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:00,842 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:00,846 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:01,032 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:03,153 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:18:03,826 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:03,826 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:03,854 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:04,037 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:04,038 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/output.log
+2020-12-07 20:18:05,003 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:18:05,307 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:18:06,867 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:06,868 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:06,873 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:07,041 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:09,526 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:18:10,005 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:10,005 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:10,010 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:10,044 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:13,054 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:13,055 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:13,059 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:13,574 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:18:13,574 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:18:13,574 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: status
+2020-12-07 20:18:13,581 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:18:13,864 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:18:14,050 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:14,070 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:18:16,051 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:16,052 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:16,058 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:16,058 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:16,372 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:18:18,581 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:18:19,053 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:19,054 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:19,120 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:19,121 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:22,120 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:22,120 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:22,124 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:22,125 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:23,091 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:18:25,166 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:25,167 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:25,172 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:26,131 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:27,597 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:18:27,921 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:18:28,211 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:28,212 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:28,216 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:28,869 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:18:28,870 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:18:28,870 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: status
+2020-12-07 20:18:28,874 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:18:29,135 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:29,156 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:18:31,289 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:31,289 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:31,294 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:32,114 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:18:32,138 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:34,351 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:34,352 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:34,357 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:35,144 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:35,145 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/output.log
+2020-12-07 20:18:36,642 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:18:37,340 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:37,341 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:37,346 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:38,149 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:40,346 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:40,346 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:40,352 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:40,642 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:18:41,146 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:18:41,152 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:43,455 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:43,455 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:43,459 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:44,157 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:44,162 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:18:44,162 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:18:44,163 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: status
+2020-12-07 20:18:44,167 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:18:44,465 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:18:45,719 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:18:46,456 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:46,456 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:46,461 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:47,161 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:49,802 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:49,803 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:49,807 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:50,165 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:50,228 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:18:52,853 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:52,854 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:52,859 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:53,168 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:53,193 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:18:54,806 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:18:55,845 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:55,846 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:55,850 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:56,172 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:58,851 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:18:58,851 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:18:58,855 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:18:59,175 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:18:59,336 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:18:59,472 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:18:59,472 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:18:59,472 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: status
+2020-12-07 20:18:59,477 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:18:59,770 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:19:01,901 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:01,901 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:01,953 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:02,179 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:03,851 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:19:04,164 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:19:04,964 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:04,964 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:04,969 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:05,184 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:05,185 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/output.log
+2020-12-07 20:19:07,933 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:07,934 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:08,004 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:08,188 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:08,382 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:19:10,949 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:10,949 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:10,953 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:11,191 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:12,909 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:19:13,922 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:13,923 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:13,927 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:14,195 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:14,240 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:19:14,776 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:19:14,776 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:19:14,777 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: status
+2020-12-07 20:19:14,781 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:19:15,060 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:19:16,968 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:16,969 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:16,973 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:17,198 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:17,430 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:19:19,949 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:19,951 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:19,955 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:20,201 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:21,961 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:19:23,147 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:23,147 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:23,152 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:23,205 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:26,190 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:26,191 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:26,197 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:26,209 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:26,489 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:19:26,549 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:19:29,185 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:29,186 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:29,191 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:29,212 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:30,065 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:19:30,066 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:19:30,066 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: status
+2020-12-07 20:19:30,070 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:19:30,358 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:19:31,081 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:19:32,342 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:32,343 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:32,428 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:33,217 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:35,329 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:35,330 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:35,335 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:35,597 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:19:36,223 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:36,223 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/output.log
+2020-12-07 20:19:38,459 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:38,460 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:38,466 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:38,791 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:19:39,227 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:40,121 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:19:41,437 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:41,437 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:41,441 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:42,231 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:44,634 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:19:44,646 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:44,646 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:44,651 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:45,235 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:45,364 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:19:45,365 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:19:45,365 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: status
+2020-12-07 20:19:45,369 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:19:45,651 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:19:47,661 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:47,662 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:47,666 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:48,239 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:49,155 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:19:49,454 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:19:50,726 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:50,727 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:50,761 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:51,243 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:53,677 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:19:53,756 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:53,757 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:53,761 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:54,247 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:56,768 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:56,769 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:56,773 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:19:57,266 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:19:58,252 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:19:59,945 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:19:59,946 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:19:59,950 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:20:00,252 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:20:00,269 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:20:00,656 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:20:00,656 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:20:00,656 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: status
+2020-12-07 20:20:00,662 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:20:00,957 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:20:02,791 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:20:02,961 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:20:02,962 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:20:02,966 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:20:03,273 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:20:06,120 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:20:06,120 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:20:06,125 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:20:06,278 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:20:06,278 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/output.log
+2020-12-07 20:20:07,308 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:20:09,167 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:20:09,168 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:20:09,172 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:20:09,282 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:20:11,865 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:20:12,196 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:20:12,196 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:20:12,201 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:20:12,235 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:20:12,285 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:20:15,304 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:20:15,305 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:20:15,343 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:20:15,961 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:20:15,962 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:20:15,962 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: status
+2020-12-07 20:20:15,969 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:20:16,260 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:20:16,291 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:20:16,399 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:20:18,345 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:20:18,346 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:20:18,351 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:20:19,294 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:20:20,921 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:20:21,393 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:20:21,394 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:20:21,399 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:20:22,312 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:20:24,570 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:20:24,570 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:20:24,575 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:20:24,882 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:20:25,315 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:20:25,453 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:20:27,593 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:20:27,594 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:20:27,599 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:20:28,319 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:20:29,978 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:20:30,587 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:20:30,588 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:20:30,634 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:20:31,266 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:20:31,266 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:20:31,266 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: status
+2020-12-07 20:20:31,271 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:20:31,322 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:20:31,568 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:20:33,795 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:20:33,795 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:20:33,801 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:20:33,804 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:20:33,804 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:20:33,807 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:20:34,036 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: pause
+2020-12-07 20:20:34,036 INFO    HandlerThread:28855 [handler.py:handle_request_pause():222] stopping system metrics thread
+2020-12-07 20:20:34,099 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: resume
+2020-12-07 20:20:34,099 INFO    HandlerThread:28855 [handler.py:handle_request_resume():217] starting system metrics thread
+2020-12-07 20:20:34,100 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:20:34,329 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:20:34,329 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/output.log
+2020-12-07 20:20:37,506 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:20:37,815 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:20:42,064 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:20:43,341 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/output.log
+2020-12-07 20:20:43,709 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: pause
+2020-12-07 20:20:43,709 INFO    HandlerThread:28855 [handler.py:handle_request_pause():222] stopping system metrics thread
+2020-12-07 20:20:43,763 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:20:46,573 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:20:46,574 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:20:46,574 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: status
+2020-12-07 20:20:46,579 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:20:46,873 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:20:54,066 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:20:57,911 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: resume
+2020-12-07 20:20:57,911 INFO    HandlerThread:28855 [handler.py:handle_request_resume():217] starting system metrics thread
+2020-12-07 20:20:58,304 DEBUG   SenderThread:28855 [sender.py:send():89] send: files
+2020-12-07 20:20:58,305 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file media/images/plotting encoded vectors using RMSprop with t-SNE_61_c4f34f98.png with policy now
+2020-12-07 20:20:58,307 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: pause
+2020-12-07 20:20:58,307 INFO    HandlerThread:28855 [handler.py:handle_request_pause():222] stopping system metrics thread
+2020-12-07 20:20:58,307 DEBUG   SenderThread:28855 [sender.py:send():89] send: history
+2020-12-07 20:20:58,308 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:20:58,313 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:20:58,321 DEBUG   Thread-14 :28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:20:58,357 DEBUG   SenderThread:28855 [sender.py:send():89] send: stats
+2020-12-07 20:20:58,362 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:20:58,362 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/media/images/plotting encoded vectors using RMSprop with t-SNE_61_c4f34f98.png
+2020-12-07 20:20:58,363 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/media
+2020-12-07 20:20:58,363 INFO    Thread-8  :28855 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/media/images
+2020-12-07 20:20:58,621 DEBUG   Thread-14 :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:20:58,633 DEBUG   Thread-14 :28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-07 20:20:59,698 DEBUG   Thread-14 :28855 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/media/images/plotting%20encoded%20vectors%20using%20RMSprop%20with%20t-SNE_61_c4f34f98.png?Expires=1607458858&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=WXpdba%2BGFtE17O7gknV5eX7y09WQgTmnIhhi5fw7AesWVlzRN2LskjYtOkP8j5gln9bf6fGouVcUsbfQA43l%2FH7dWZ0n5IZDfXpvsQB8Nc9%2BX08Ob79inVIH84CYccxBTrlDNKbh7At%2FJFRXpNVmKEVsWFZD4P7dhVPHsJ30xTmYleVhuoHZOpK7gJvzcmwGPeNkkAc1R5ebB9uKB94KSf%2BVBrMYrKuhtF0YGiPk6V6pmGv8CHR5NOGowg04fp%2Ff0IZISD6nl56xpqyIXSu1JsUeMPpSu3H908lzewbbYHNGxFqY%2B2nkrB7ukmkh0JmEoK9QPC57Mqgnl60xa4xpcA%3D%3D HTTP/1.1" 200 0
+2020-12-07 20:20:59,700 INFO    Thread-14 :28855 [upload_job.py:push():112] Uploaded file /tmp/tmpx_56zs73wandb/3egwtesk-media/images/plotting encoded vectors using RMSprop with t-SNE_61_c4f34f98.png
+2020-12-07 20:21:01,877 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: status
+2020-12-07 20:21:01,878 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:21:01,878 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: status
+2020-12-07 20:21:01,882 DEBUG   SenderThread:28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:21:02,178 DEBUG   SenderThread:28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:21:08,683 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:21:16,035 DEBUG   SenderThread:28855 [sender.py:send():89] send: exit
+2020-12-07 20:21:16,035 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: poll_exit
+2020-12-07 20:21:16,036 INFO    SenderThread:28855 [sender.py:send_exit():167] handling exit code: 0
+2020-12-07 20:21:16,036 INFO    SenderThread:28855 [sender.py:send_exit():175] send defer
+2020-12-07 20:21:16,036 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:21:16,036 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: poll_exit
+2020-12-07 20:21:16,037 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:21:16,037 INFO    HandlerThread:28855 [handler.py:handle_request_defer():68] handle defer: 0
+2020-12-07 20:21:16,038 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:21:16,038 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:21:16,038 INFO    SenderThread:28855 [sender.py:send_request_defer():184] handle sender defer: 0
+2020-12-07 20:21:16,038 INFO    SenderThread:28855 [sender.py:send_request_defer():220] send defer: 1
+2020-12-07 20:21:16,039 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:21:16,039 INFO    HandlerThread:28855 [handler.py:handle_request_defer():68] handle defer: 1
+2020-12-07 20:21:16,039 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:21:16,039 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:21:16,039 INFO    SenderThread:28855 [sender.py:send_request_defer():184] handle sender defer: 1
+2020-12-07 20:21:16,039 INFO    SenderThread:28855 [sender.py:send_request_defer():220] send defer: 2
+2020-12-07 20:21:16,040 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:21:16,040 INFO    HandlerThread:28855 [handler.py:handle_request_defer():68] handle defer: 2
+2020-12-07 20:21:16,040 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:21:16,040 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:21:16,040 INFO    SenderThread:28855 [sender.py:send_request_defer():184] handle sender defer: 2
+2020-12-07 20:21:16,040 INFO    SenderThread:28855 [sender.py:send_request_defer():220] send defer: 3
+2020-12-07 20:21:16,041 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:21:16,041 INFO    HandlerThread:28855 [handler.py:handle_request_defer():68] handle defer: 3
+2020-12-07 20:21:16,042 DEBUG   SenderThread:28855 [sender.py:send():89] send: summary
+2020-12-07 20:21:16,090 INFO    SenderThread:28855 [sender.py:_save_file():567] saving file wandb-summary.json with policy end
+2020-12-07 20:21:16,091 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:21:16,091 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:21:16,091 INFO    SenderThread:28855 [sender.py:send_request_defer():184] handle sender defer: 3
+2020-12-07 20:21:16,091 INFO    SenderThread:28855 [sender.py:send_request_defer():220] send defer: 4
+2020-12-07 20:21:16,091 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:21:16,092 INFO    HandlerThread:28855 [handler.py:handle_request_defer():68] handle defer: 4
+2020-12-07 20:21:16,092 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:21:16,092 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:21:16,092 INFO    SenderThread:28855 [sender.py:send_request_defer():184] handle sender defer: 4
+2020-12-07 20:21:16,092 INFO    SenderThread:28855 [dir_watcher.py:finish():280] shutting down directory watcher
+2020-12-07 20:21:16,369 INFO    SenderThread:28855 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:21:16,369 INFO    SenderThread:28855 [dir_watcher.py:finish():309] scan: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files
+2020-12-07 20:21:16,370 INFO    SenderThread:28855 [dir_watcher.py:finish():315] scan save: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-metadata.json wandb-metadata.json
+2020-12-07 20:21:16,370 INFO    SenderThread:28855 [dir_watcher.py:finish():315] scan save: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json wandb-summary.json
+2020-12-07 20:21:16,371 INFO    SenderThread:28855 [dir_watcher.py:finish():315] scan save: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/requirements.txt requirements.txt
+2020-12-07 20:21:16,377 INFO    SenderThread:28855 [dir_watcher.py:finish():315] scan save: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/output.log output.log
+2020-12-07 20:21:16,383 DEBUG   Thread-16 :28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:21:16,384 INFO    SenderThread:28855 [dir_watcher.py:finish():315] scan save: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/config.yaml config.yaml
+2020-12-07 20:21:16,384 DEBUG   Thread-15 :28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:21:16,392 DEBUG   Thread-17 :28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:21:16,399 DEBUG   Thread-18 :28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-07 20:21:16,400 INFO    SenderThread:28855 [dir_watcher.py:finish():315] scan save: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/media/images/plotting encoded vectors using RMSprop with t-SNE_61_c4f34f98.png media/images/plotting encoded vectors using RMSprop with t-SNE_61_c4f34f98.png
+2020-12-07 20:21:16,400 INFO    SenderThread:28855 [sender.py:send_request_defer():220] send defer: 5
+2020-12-07 20:21:16,401 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:21:16,402 INFO    HandlerThread:28855 [handler.py:handle_request_defer():68] handle defer: 5
+2020-12-07 20:21:16,402 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:21:16,402 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:21:16,402 INFO    SenderThread:28855 [sender.py:send_request_defer():184] handle sender defer: 5
+2020-12-07 20:21:16,402 INFO    SenderThread:28855 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-07 20:21:16,403 INFO    SenderThread:28855 [sender.py:send_request_defer():220] send defer: 6
+2020-12-07 20:21:16,403 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:21:16,403 INFO    HandlerThread:28855 [handler.py:handle_request_defer():68] handle defer: 6
+2020-12-07 20:21:16,404 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:21:16,404 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:21:16,404 INFO    SenderThread:28855 [sender.py:send_request_defer():184] handle sender defer: 6
+2020-12-07 20:21:16,677 DEBUG   Thread-16 :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:21:16,679 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:21:16,691 DEBUG   Thread-16 :28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-07 20:21:16,694 DEBUG   Thread-15 :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:21:16,698 DEBUG   Thread-17 :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:21:16,704 DEBUG   Thread-15 :28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-07 20:21:16,710 DEBUG   Thread-17 :28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-07 20:21:16,711 DEBUG   Thread-18 :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-07 20:21:16,719 DEBUG   Thread-18 :28855 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-07 20:21:16,949 DEBUG   Thread-5  :28855 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/file_stream HTTP/1.1" 200 None
+2020-12-07 20:21:16,953 INFO    SenderThread:28855 [sender.py:send_request_defer():220] send defer: 7
+2020-12-07 20:21:16,954 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:21:16,954 INFO    HandlerThread:28855 [handler.py:handle_request_defer():68] handle defer: 7
+2020-12-07 20:21:16,954 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:21:16,954 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:21:16,954 INFO    SenderThread:28855 [sender.py:send_request_defer():184] handle sender defer: 7
+2020-12-07 20:21:16,955 INFO    SenderThread:28855 [sender.py:send_request_defer():220] send defer: 8
+2020-12-07 20:21:16,955 DEBUG   SenderThread:28855 [sender.py:send():89] send: final
+2020-12-07 20:21:16,956 DEBUG   SenderThread:28855 [sender.py:send():89] send: footer
+2020-12-07 20:21:16,956 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: defer
+2020-12-07 20:21:16,956 INFO    HandlerThread:28855 [handler.py:handle_request_defer():68] handle defer: 8
+2020-12-07 20:21:16,957 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:21:16,957 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: defer
+2020-12-07 20:21:16,957 INFO    SenderThread:28855 [sender.py:send_request_defer():184] handle sender defer: 8
+2020-12-07 20:21:17,273 DEBUG   Thread-16 :28855 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/requirements.txt?Expires=1607458876&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=b%2BNAkUMjF8jOQYv6ZEnAmDmWuZ7kcG%2Bwf16xZzDO2gRiCjZ9lx14YJbuvgStVH8CdHKIWo0dKr%2BQpxeF2dS4tpQKlan%2Byhxkmdydh4xf5mDoVyVF3b3fH%2BQBFLQ3p4KcDwnGz%2FmoufjVFnD%2FmZ2IUVvKAU4LkycYpWbF6LJiF50jmSUxec9DoW9kyuG%2FxFnjfQNJZu%2FrDbuy3FvnVA2Zs19KGE1PzRXyUw%2BMNi%2BScia%2F7wrchFM3zsaK5tEoBq4R6x%2B3Rf0TmJvEBKH7Tf%2BAtpZuSLUMEOzRkIAsZE%2BnFyYqtCxwon44UYMop2PSIhBwTShDXmlaf8Sv4VLCbdmKSA%3D%3D HTTP/1.1" 200 0
+2020-12-07 20:21:17,276 INFO    Thread-16 :28855 [upload_job.py:push():112] Uploaded file wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/requirements.txt
+2020-12-07 20:21:17,277 DEBUG   Thread-15 :28855 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/wandb-summary.json?Expires=1607458876&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=i2Lt%2FfBc%2FoTOFmFjXIl8z1bE1O%2FR5AZoyRP3QWr1sY1nI3a96aclnPv6d1aEaUNiH7fjjNWMEDcTtNM3aOp%2F3p%2Fzh96tkVWaxiXIAyDCdhroRgy2cdlvwJ2%2BEA3XbnmoLcG9YS1UaFwAFue76Rkix48vcIZsfKGDDaUwHuIVmYT8tJt1d9sd%2Besv28yZrfaT5POPbRIhdDE8lO3kL4qMLIS0Yn1ovPKprAvOMeHD12SEiOWPa2FzCVxetPvhcn00s%2Bu5VTTv9H1kNtjgTMBPEwOOVPzZZclgVHN89FbGJDnIgdvtEYSQxP0jlpasQW2jq9nkcEDjGbiZG%2FMSLMZe7w%3D%3D HTTP/1.1" 200 0
+2020-12-07 20:21:17,280 INFO    Thread-15 :28855 [upload_job.py:push():112] Uploaded file wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/wandb-summary.json
+2020-12-07 20:21:17,297 DEBUG   Thread-17 :28855 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/output.log?Expires=1607458876&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=SpPQ8unG2QAVnl63YnalN0h%2BEMB5IrXfn1Cx7Yh0oqWWFVXt5SEF3WVe18ggB%2Fe7cOX%2Fp5TozBJZVMdlIlXDTkmZ4aUqG2QU29IqeyQLrB8HXGal6hvh0rBJ7Ud57O7dUbMSLhU7T7OH8LxCAmVgdOfkMz6yOVnKyG5ezQpwgsQhYCISiME%2FFsepHvnfUIiyecv%2FPkeJ8XT5vRiobNPBGehn95nyotGXjXeF65NgViaHTp%2BgbjVyMw5gyT84%2FRgJiWJgmuXCnkwj9hkzNhZs3w0awobSq3N1pRT1E%2B10qPY8ipbU5DDcMu2N3GgWt0Bf9s%2BYk4HiBKrehfTlLQUeZw%3D%3D HTTP/1.1" 200 0
+2020-12-07 20:21:17,300 INFO    Thread-17 :28855 [upload_job.py:push():112] Uploaded file wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/output.log
+2020-12-07 20:21:17,307 DEBUG   Thread-18 :28855 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rlrahulkanojia-hp/Experiments/Imagenet_max-margin_euclidean_Resner/config.yaml?Expires=1607458876&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=cf0IbShn2DLoZKLLfXo8ncqSphnf7oKLxrttWh2R6NAfQ%2FFS0pRS9OqA3GvFWk7XQilN%2Bpvxd7Y8cF5Zr49fAWQlreSa%2BvqT3pOFWxwOPgWk6u5%2B9DZUMdsqUFATpwZWpV3yMD51Yyg5xEas%2BjKN2BHUzMNCK44Q0ngi3SDY6lp2I6PAgY5zxgaWfvcTKzQSxxVV4wQyS9eJI8mQMV7FUYoCD96CNsP33bJR5QbhVu%2BpXe1n63NymJyA8bLskayaYSpmUgLy%2F8q0gsNETMBa50kd%2F389jdbE7L4RZAzXpyiqWdLOBClAM85%2BW1FF7dIzuJPL2pmnj6sPzpE7RYsITw%3D%3D HTTP/1.1" 200 0
+2020-12-07 20:21:17,310 INFO    Thread-18 :28855 [upload_job.py:push():112] Uploaded file wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/files/config.yaml
+2020-12-07 20:21:18,049 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: poll_exit
+2020-12-07 20:21:18,050 DEBUG   SenderThread:28855 [sender.py:send():89] send: request
+2020-12-07 20:21:18,050 DEBUG   SenderThread:28855 [sender.py:send_request():98] send_request: poll_exit
+2020-12-07 20:21:18,050 INFO    SenderThread:28855 [file_pusher.py:join():174] waiting for file pusher
+2020-12-07 20:21:18,054 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: get_summary
+2020-12-07 20:21:18,055 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: sampled_history
+2020-12-07 20:21:18,058 DEBUG   HandlerThread:28855 [handler.py:handle_request():54] handle_request: shutdown
+2020-12-07 20:21:18,058 INFO    HandlerThread:28855 [handler.py:finish():267] shutting down handler
+2020-12-07 20:21:18,956 INFO    WriterThread:28855 [datastore.py:close():257] close: wandb/run-20201207_201708-Imagenet_max-margin_euclidean_Resner/run-Imagenet_max-margin_euclidean_Resner.wandb
+2020-12-07 20:21:19,051 INFO    SenderThread:28855 [sender.py:finish():608] shutting down sender
+2020-12-07 20:21:19,051 INFO    SenderThread:28855 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-07 20:21:19,051 INFO    SenderThread:28855 [file_pusher.py:join():174] waiting for file pusher
+2020-12-07 20:21:19,053 INFO    MainThread:28855 [internal.py:handle_exit():137] Internal process exited

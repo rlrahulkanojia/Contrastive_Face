@@ -1,0 +1,9 @@
+Epoch: 0 Loss: 34.151
+Epoch: 10 Loss: 29.870
+Epoch: 20 Loss: 29.482
+Epoch: 30 Loss: 27.969
+Epoch: 40 Loss: 27.562
+
+/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/seaborn/_decorators.py:43: FutureWarning: Pass the following variables as keyword args: x, y. From version 0.12, the only valid positional argument will be `data`, and passing other arguments without an explicit keyword will result in an error or misinterpretation.
+  FutureWarning
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.

@@ -1,0 +1,10 @@
+2020-12-07 19:11:52,665 INFO    MainThread:26348 [wandb_setup.py:_flush():70] setting env: {'notebook_name': 'Experiments', 'disable_code': 'True'}
+2020-12-07 19:11:52,666 INFO    MainThread:26348 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2020-12-07 19:11:52,666 INFO    MainThread:26348 [wandb_setup.py:_flush():70] setting login settings: {}
+2020-12-07 19:11:52,666 INFO    MainThread:26348 [wandb_setup.py:_flush():70] setting login settings: {}
+2020-12-07 19:11:52,666 INFO    MainThread:26348 [wandb_setup.py:_flush():70] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f60aa523a90>
+2020-12-07 19:11:52,667 INFO    MainThread:26348 [wandb_init.py:_log_setup():303] Logging user logs to /home/rahulkanojia/Documents/EXP_CON/paul/Experiments/wandb/run-20201207_191152-Data1_L1_Dist_0_M0/logs/debug.log
+2020-12-07 19:11:52,667 INFO    MainThread:26348 [wandb_init.py:_log_setup():304] Logging internal logs to /home/rahulkanojia/Documents/EXP_CON/paul/Experiments/wandb/run-20201207_191152-Data1_L1_Dist_0_M0/logs/debug-internal.log
+2020-12-07 19:12:30,314 INFO    MainThread:26348 [wandb_init.py:teardown():163] tearing down wandb.init
+2020-12-07 19:12:30,315 INFO    MainThread:26348 [wandb_init.py:_jupyter_teardown():234] cleaning up jupyter logic
+2020-12-07 19:12:30,511 INFO    MainThread:26348 [jupyter.py:save_history():208] not saving jupyter history

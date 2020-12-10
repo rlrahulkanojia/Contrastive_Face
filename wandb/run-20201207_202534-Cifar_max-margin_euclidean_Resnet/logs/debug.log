@@ -1,0 +1,46 @@
+2020-12-07 20:25:34,123 INFO    MainThread:29077 [wandb_init.py:_log_setup():293] Logging user logs to wandb/run-20201207_202534-Cifar_max-margin_euclidean_Resnet/logs/debug.log
+2020-12-07 20:25:34,123 INFO    MainThread:29077 [wandb_init.py:_log_setup():294] Logging internal logs to wandb/run-20201207_202534-Cifar_max-margin_euclidean_Resnet/logs/debug-internal.log
+2020-12-07 20:25:34,124 INFO    MainThread:29077 [wandb_setup.py:_flush():69] setting env: {'disable_code': 'True', 'notebook_name': 'Experiments'}
+2020-12-07 20:25:34,124 INFO    MainThread:29077 [wandb_setup.py:_flush():69] setting user settings: {'email': 'rahul.kanojia@hyperverge.co'}
+2020-12-07 20:25:34,124 INFO    MainThread:29077 [wandb_setup.py:_flush():69] multiprocessing start_methods=fork,spawn,forkserver
+2020-12-07 20:25:34,124 INFO    MainThread:29077 [wandb_setup.py:_flush():69] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f92e3e38310>
+2020-12-07 20:25:38,974 INFO    MainThread:29077 [wandb_run.py:_console_start():1290] atexit reg
+2020-12-07 20:25:38,977 INFO    MainThread:29077 [wandb_run.py:_redirect():1160] redirect: SettingsConsole.WRAP
+2020-12-07 20:25:38,978 INFO    MainThread:29077 [wandb_run.py:_redirect():1191] Wrapping output streams.
+2020-12-07 20:25:38,978 INFO    MainThread:29077 [wandb_run.py:_redirect():1207] Redirects installed.
+2020-12-07 20:47:24,336 INFO    MainThread:29077 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-08 08:01:26,942 INFO    MainThread:29077 [wandb_run.py:_atexit_cleanup():1263] got exitcode: 0
+2020-12-08 08:01:26,944 INFO    MainThread:29077 [wandb_run.py:_restore():1235] restore
+2020-12-08 08:01:26,953 INFO    MainThread:29077 [wandb_run.py:_wait_for_finish():1377] got exit ret: uuid: "7c891f058d094a548f3888fdca5be639"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 595
+      total_bytes: 595
+    }
+  }
+}
+
+2020-12-08 08:01:28,968 INFO    MainThread:29077 [wandb_run.py:_wait_for_finish():1377] got exit ret: uuid: "5bfca85cd8ed4e6fbf66ec4ac72fccdc"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 3413
+      total_bytes: 3413
+    }
+  }
+}
+
+2020-12-08 08:01:30,128 INFO    MainThread:29077 [wandb_run.py:_show_summary():1520] rendering summary
+2020-12-08 08:01:30,130 INFO    MainThread:29077 [wandb_run.py:_show_history():1558] rendering history
+2020-12-08 08:01:30,135 INFO    MainThread:29077 [wandb_run.py:_show_files():1586] logging synced files
+2020-12-08 08:01:30,141 INFO    MainThread:29077 [internal.py:handle_exit():137] Internal process exited

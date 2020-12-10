@@ -1,0 +1,35 @@
+Epoch: 0 Loss: 4.550
+Epoch: 10 Loss: 4.612
+Epoch: 20 Loss: 4.605
+Epoch: 30 Loss: 4.605
+Epoch: 40 Loss: 4.605
+Epoch: 50 Loss: 4.605
+Epoch: 60 Loss: 4.622
+Epoch: 70 Loss: 4.605
+Epoch: 80 Loss: 4.605
+Epoch: 90 Loss: 4.605
+Epoch: 100 Loss: 4.594
+Epoch: 110 Loss: 4.499
+Epoch: 120 Loss: 4.352
+Epoch: 130 Loss: 4.243
+Epoch: 140 Loss: 4.138
+Epoch: 150 Loss: 4.239
+Epoch: 160 Loss: 4.155
+Epoch: 170 Loss: 4.186
+Epoch: 180 Loss: 4.022
+Epoch: 190 Loss: 4.117
+Epoch: 200 Loss: 3.903
+Epoch: 210 Loss: 3.553
+Epoch: 220 Loss: 3.331
+Epoch: 230 Loss: 3.309
+Epoch: 240 Loss: 3.261
+Epoch: 250 Loss: 3.197
+Epoch: 260 Loss: 3.091
+Epoch: 270 Loss: 3.098
+Epoch: 280 Loss: 3.140
+Epoch: 290 Loss: 3.081
+
+findfont: Font family ['xkcd', 'xkcd Script', 'Humor Sans', 'Comic Neue', 'Comic Sans MS'] not found. Falling back to DejaVu Sans.
+findfont: Font family ['xkcd', 'xkcd Script', 'Humor Sans', 'Comic Neue', 'Comic Sans MS'] not found. Falling back to DejaVu Sans.
+/home/rahulkanojia/envs/tf/lib/python3.7/site-packages/seaborn/_decorators.py:43: FutureWarning: Pass the following variables as keyword args: x, y. From version 0.12, the only valid positional argument will be `data`, and passing other arguments without an explicit keyword will result in an error or misinterpretation.
+  FutureWarning

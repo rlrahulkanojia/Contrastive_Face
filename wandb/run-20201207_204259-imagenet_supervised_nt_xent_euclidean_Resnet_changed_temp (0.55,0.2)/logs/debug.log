@@ -1,0 +1,58 @@
+2020-12-07 20:42:59,123 INFO    MainThread:29329 [wandb_init.py:_log_setup():293] Logging user logs to wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/logs/debug.log
+2020-12-07 20:42:59,123 INFO    MainThread:29329 [wandb_init.py:_log_setup():294] Logging internal logs to wandb/run-20201207_204259-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/logs/debug-internal.log
+2020-12-07 20:42:59,123 INFO    MainThread:29329 [wandb_setup.py:_flush():69] setting env: {'disable_code': 'True', 'notebook_name': 'Experiments'}
+2020-12-07 20:42:59,123 INFO    MainThread:29329 [wandb_setup.py:_flush():69] setting user settings: {'email': 'rahul.kanojia@hyperverge.co'}
+2020-12-07 20:42:59,123 INFO    MainThread:29329 [wandb_setup.py:_flush():69] multiprocessing start_methods=fork,spawn,forkserver
+2020-12-07 20:42:59,123 INFO    MainThread:29329 [wandb_setup.py:_flush():69] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fb060531c90>
+2020-12-07 20:42:59,124 INFO    MainThread:29329 [wandb_run.py:finish():988] finishing run rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.7,0.2)
+2020-12-07 20:42:59,124 INFO    MainThread:29329 [wandb_run.py:_atexit_cleanup():1263] got exitcode: 0
+2020-12-07 20:42:59,124 INFO    MainThread:29329 [wandb_run.py:_restore():1235] restore
+2020-12-07 20:42:59,131 INFO    MainThread:29329 [wandb_run.py:_wait_for_finish():1377] got exit ret: uuid: "25bf1e4fc4b9443cacd7cb4f618bb22b"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 595
+      total_bytes: 595
+    }
+  }
+}
+
+2020-12-07 20:43:01,142 INFO    MainThread:29329 [wandb_run.py:_wait_for_finish():1377] got exit ret: uuid: "6c8f002b286544a2a1405fe04bb12e99"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 3967
+      total_bytes: 3967
+    }
+  }
+}
+
+2020-12-07 20:43:02,281 INFO    MainThread:29329 [wandb_run.py:_show_summary():1520] rendering summary
+2020-12-07 20:43:02,284 INFO    MainThread:29329 [wandb_run.py:_show_history():1558] rendering history
+2020-12-07 20:43:02,286 INFO    MainThread:29329 [wandb_run.py:_show_files():1586] logging synced files
+2020-12-07 20:43:04,978 INFO    MainThread:29329 [wandb_run.py:_console_start():1290] atexit reg
+2020-12-07 20:43:05,002 INFO    MainThread:29329 [wandb_run.py:_redirect():1160] redirect: SettingsConsole.WRAP
+2020-12-07 20:43:05,002 INFO    MainThread:29329 [wandb_run.py:_redirect():1191] Wrapping output streams.
+2020-12-07 20:43:05,002 INFO    MainThread:29329 [wandb_run.py:_redirect():1207] Redirects installed.
+2020-12-07 20:44:05,081 INFO    MainThread:29329 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 20:44:12,544 INFO    MainThread:29329 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 20:44:14,542 INFO    MainThread:29329 [wandb_init.py:_pause_backend():215] pausing backend
+2020-12-07 20:44:14,549 INFO    MainThread:29329 [wandb_init.py:_resume_backend():220] resuming backend
+2020-12-07 20:44:14,713 INFO    MainThread:29329 [wandb_init.py:_log_setup():293] Logging user logs to wandb/run-20201207_204414-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/logs/debug.log
+2020-12-07 20:44:14,714 INFO    MainThread:29329 [wandb_init.py:_log_setup():294] Logging internal logs to wandb/run-20201207_204414-imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)/logs/debug-internal.log
+2020-12-07 20:44:14,714 INFO    MainThread:29329 [wandb_setup.py:_flush():69] setting env: {'disable_code': 'True', 'notebook_name': 'Experiments'}
+2020-12-07 20:44:14,714 INFO    MainThread:29329 [wandb_setup.py:_flush():69] setting user settings: {'email': 'rahul.kanojia@hyperverge.co'}
+2020-12-07 20:44:14,714 INFO    MainThread:29329 [wandb_setup.py:_flush():69] multiprocessing start_methods=fork,spawn,forkserver
+2020-12-07 20:44:14,714 INFO    MainThread:29329 [wandb_setup.py:_flush():69] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fb060531c90>
+2020-12-07 20:44:14,714 INFO    MainThread:29329 [wandb_run.py:finish():988] finishing run rlrahulkanojia-hp/Experiments/imagenet_supervised_nt_xent_euclidean_Resnet_changed_temp (0.55,0.2)
+2020-12-07 20:44:14,714 INFO    MainThread:29329 [wandb_init.py:_jupyter_teardown():225] cleaning up jupyter logic
+2020-12-07 20:44:14,715 INFO    MainThread:29329 [jupyter.py:save_history():200] not saving jupyter history
